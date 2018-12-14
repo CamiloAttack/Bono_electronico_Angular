@@ -1,0 +1,133 @@
+ <div class="modal-titulo">BONO</div>
+ <div class="modal_bono">
+    <div class="modal-body bono">
+        <div class="row pad">
+        <div class="col-sm-4 col-me-4 col-xs-4 text-left">
+        <!-- Viene de la sesion, validar información para consultar-->  
+            RUT: 
+            {{vm.record[0].rutRazonSocial | rut }} </div>
+        <div class="col-xs-4 col-sm-4 col-me-4 text-center"  ng-hide="!vm.record[0].codigoAtencion || vm.record[0].numeroBono">COMPROBANTE DE ATENCION</div>
+        <div class="col-xs-4 col-sm-4 col-me-4 text-center"  ng-hide="!vm.record[0].numeroBono">COMPROBANTE DE ATENCION</div>
+        <div class="col-xs-3 col-sm-3 col-me-3 text-center"  ng-hide="!vm.record[0].codigoAtencion || vm.record[0].numeroBono">Nro. Atención {{ vm.record[0].codigoAtencion}}</div>
+        <div class="col-xs-4 col-sm-4 col-me-4 text-center" ng-hide="!vm.record[0].numeroBono">Nro. Atención  {{vm.record[0].numeroBono}}</div>
+    </div>
+        <div class="row pad">
+        <div class="col-sm-6 col-me-6 col-xs-6 border-r">
+            <div>Fecha y Hora de Emisión:
+                {{vm.record[0].fecha_bono_unix * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}
+            </div>
+            <div>Titular: 
+                {{ vm.record[0].nombreTipoAtencion == 'ONLINE' ? vm.record[0].nombreAfiliado : vm.record[0].nombreBeneficiario }}
+                {{ vm.record[0].nombreTipoAtencion == 'ONLINE' ? '' : vm.record[0].apellidoBeneficiario }}     
+              RUT:
+                <span ng-switch on="vm.record[0].nombreTipoAtencion">
+                    <span ng-switch-when="ONLINE">
+                        {{vm.record[0].rutAfiliado | rut }}
+                    </span>
+                    <span ng-switch-default>
+                        {{vm.record[0].rutBeneficiario | rut}}
+                    </span>
+                </span>  
+
+            </div>
+            <div>Beneficiario:
+                {{vm.record[0].nombreBeneficiario}}
+                {{vm.record[0].apellidoBeneficiario}}
+                RUT
+                {{vm.record[0].rutBeneficiario | rut}}</div>
+        </div>
+        <div class="col-sm-6 col-me-6 col-xs-6">
+            <div>Emisor:
+                {{vm.record[0].nombreRazonsocial}}
+                RUT:
+                {{vm.record[0].rutRazonSocial | rut }}
+            </div>
+            <div>Tipo de Atención: 
+                {{vm.record[0].nombreTipoAtencion == 'ONLINE' ? 'BONIFICADA' : vm.record[0].nombreTipoAtencion}}</div>
+            <div>Plan/Grupo de Ingreso:
+                {{vm.record[0].planGrupo || 'PARTICULAR'}} </div>
+        </div>
+    </div>
+        <div class="row container-fluid table-responsive pad altC">
+        <table class="table impre" id="tablabono">
+            <thead>
+                <tr>
+                    <td class="col-sm-6 col-me-6 col-xs-6 border-r text-center">DETALLE DE PRESTACION</td>
+                    <td class="col-sm-2 col-me-2 col-xs-2 border-r text-center">VALOR</td>
+                    <td class="col-sm-2 col-me-2 col-xs-2 border-r text-center">BONIFICACIONES</td>
+                    <td class="col-sm-2 col-me-2 col-xs-2 text-center">TOTAL COPAGO</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="prestacion in vm.record">
+                    <td class="border-r">
+                        {{ prestacion.codigoPrestacion }} - {{ prestacion.nombrePrestacion }}
+                    </td>
+                    <td class="text-right border-r">{{prestacion.monto | currency }}</td>
+                    <td class="text-right border-r">{{prestacion.bonificacion || 0 | currency }}</td>
+                    <td class="text-right">{{prestacion.copago | currency }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="border-r text-right">TOTALES</td>
+                    <td class="text-right border-r">{{ vm.record[0].totalPrestacion || 0 | currency }}</td>
+                    <td class="text-right border-r">    {{ vm.record[0].totalBonificacion || 0 | currency }}</td>
+                    <td class="text-right">{{ vm.record[0].totalCopago || 0 | currency }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+        <div class="row border-b">
+        <div class="col-xs-12 col-sm-12 col-me-12 border-b text-center">
+            <div class="pad-sim">DETALLE DE BONIFICACIONES</div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-me-3 border-r text-center ">
+            <div class="pad-sim">ISAPRE:
+                {{vm.record[0].montoIsapre || 0 | currency}}</div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-me-3 border-r text-center">
+            <div class="pad-sim">COMPAÑIA DE SEGURO:
+                {{vm.record[0].montoSeguro || 0 | currency}}</div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-me-3  border-r text-center">
+            <div class="pad-sim">CCAF:
+                {{vm.record[0].montoCaja || 0 | currency}}</div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-me-3 text-center">
+            <div class="pad-sim">EXEDENTE:
+                {{vm.record[0].usoExcedente || 0 | currency}}</div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-xs-4 col-sm-4 col-me-4 border-r">
+            <div class=" text-center fondetalle">PROFESIONAL / INSTITUCION:</div>
+            <div class=" text-center border-b">{{vm.record[0].nombreRazonSocial}} {{vm.record[0].rutRazonSocial | rut }} </div>
+            <div class=" text-center fondetalle">MEDICO TRATANTE:</div>
+            <div class=" text-center border-b ">{{vm.record[0].codigoMedico}} - {{vm.record[0].nombreMedico}}</div>
+            <div class=" text-center fondetalle">ESPECIALIDAD:</div>
+            <div class="text-center border-b"> {{vm.record[0].idEspecialidad}} - {{vm.record[0].nombreEspecialidad}}</div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-me-4">
+            <div class="firm "></div>
+            <div class="text-center fondetalle">FIRMA DEL PROFESIONAL</div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-me-4 text-center">
+            <div class="firm"></div>
+            <div class="text-center fondetalle">FIRMA DEL BENEFICIARIO</div>
+        </div>
+    </div>
+    </div>
+  </div>
+    <div class="copia_contenedor">
+            <div class="copia">COPIA</div>
+    </div>
+    <div class="modal_bono" id="boton_imprime">            
+        <button class="gri-gri" type="button" ng-click="vm.print()" id="id_imprimir">IMPRIMIR</button>
+    </div>
+
+
+
+ 
+ 
+</div>

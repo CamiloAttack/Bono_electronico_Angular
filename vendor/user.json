@@ -1,0 +1,19 @@
+{
+    "users": {
+        "supervisor": {
+            "username": "supervisor",
+            "password": "supervisor",
+            "userRole": "supervisor"
+        },
+        "cajero": {
+            "username": "cajero",
+            "password": "cajero",
+            "userRole": "cajero"
+        },
+        "invitado": {
+            "username": "invitado",
+            "password": "invitado",
+            "userRole": "invitado"
+        }
+    }
+}

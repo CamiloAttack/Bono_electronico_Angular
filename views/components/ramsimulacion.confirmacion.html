@@ -1,0 +1,48 @@
+    <div class="no col-xs-12 col-sm-9 co6-me-9">
+        <!--OBJETO EXEDENTES-->
+        <div class="lin-gri pad">
+            <div class=" col-xs-12 col-sm-12 col-me-12 gri-gri tit-tab">COMPROBANTE</div>
+            <!--BONO-->
+            <div id="bonopantalla" class="bono">
+                <bono></bono>
+            </div>
+            <!--FIN BONO-->
+        </div>
+    </div>
+
+    <form name="confirmar">
+        <div class="col-xs-12 col-sm-3 co6-me-3 no">
+            <div class="row  lin-ver pad">
+                <div class="col-xs-12 col-sm-12 col-me-12 ver-ver tit-tab">CONFIRMACION</div>
+                <div class="col-xs-12 col-sm-12 col-me-12 ">
+                    <div class="pad-sup">Selecione algun metodo de confirmación</div>
+
+                    <div>
+                        <input type="checkbox" id="id_imprimir_bono" value="Imprimir" disabled="" ng-model="vm.confirmar.imprimir">¿Imprimir?
+                    </div>
+                    <div>
+                        <input type="checkbox" id="id_enviar_mail_bono" disabled="" value="Enviar">¿Desea enviar por correo?
+                    </div>
+                    <div class="pad-sup">
+                        <input ng-show="vm.confirmar.correo" id="correo" class="form-control" type="email" placeholder="usuario@dominio.cl" name="text" title="Debe ingrear un correo electrónico del contacto " value="camilo.attack@gmail.com"/>
+                    </div>
+                    <div class="text-center pad-sim">
+                     
+                        <button class="btn btn-warning" value="Imprimir"  id="imprimir_bono"  ng-click="vm.print()">Imprimir
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!--FIN BONO-->
+</div>
+<!--BONOS IMPRESOS-->
+<div>
+    <div class="bono-null">
+        <bonoimprimir></bonoimprimir> 
+    </div>
+
+</div>
+

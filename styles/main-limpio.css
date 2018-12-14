@@ -1,0 +1,560 @@
+/*AJUSTES OSSTRAP*/
+
+.cero{
+	border: 0px;
+padding: 0px;
+	
+}
+
+
+/*CALSE DE DEGRADACIONES BOTONES*/
+.gri-gri{
+background: url(../img/bak_logos/esq_nar.png) 10px 10px no-repeat,  linear-gradient(#939393, #6a6969);
+}
+
+.line{
+	border:#0F0 1px solid;
+}
+
+
+/*PALETA DE COLORES*/
+.ama-nar{
+/*color:#FFFFFF;*/
+background: url(../img/bak_logos/esq_hov.png) no-repeat, linear-gradient(#ef9436, #cd6813);
+}
+
+.ver-ver{
+color:#FFFFFF;
+background: url(../img/bak_logos/esq_ver.png) no-repeat, -webkit-linear-gradient(#7bba6e, #669966); /* For Safari 5.1 to 6.0 */
+background: url(../img/bak_logos/esq_ver.png) no-repeat, -o-linear-gradient(#7bba6e, #669966); /* For Opera 11.1 to 12.0 */
+background: url(../img/bak_logos/esq_ver.png) no-repeat, -moz-linear-gradient(#7bba6e, #669966); /* For Firefox 3.6 to 15 */
+background: url(../img/bak_logos/esq_ver.png) no-repeat,  linear-gradient(#7bba6e, #669966) ;
+
+}
+
+.azu-azu{
+color:#FFFFFF;
+background: -webkit-linear-gradient(#707173, #62516b); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#707173, #62516b); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#707173, #62516b); /* For Firefox 3.6 to 15 */
+background: url(../img/bak_logos/esq_azu.png) no-repeat, linear-gradient(#707173 0%, #62516b 100%); /* Standard syntax */
+}
+
+.roj-roj{
+color:#FFFFFF;
+background: -webkit-linear-gradient(#e11738, #ce0920); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#e11738, #ce0920); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#e11738, #ce0920); /* For Firefox 3.6 to 15 */
+background: url(../img/bak_logos/esq_roj.png)no-repeat, linear-gradient(#e11738 0%, #ce0920 100%); /* Standard syntax */
+}
+
+/*BARRA DE LOGO*/
+
+.logo{
+background-image:url(../img/bak_logos/logo_t_3.png);
+background-repeat:no-repeat;
+background-size:200px;
+background-position:left;
+height:30px;
+margin-top:5px;
+}
+
+.titulologo{
+color:#CCC;
+font-size:10.5px;
+margin-left:12px;
+}
+
+.width{
+	width:200px;
+}
+
+/*FIN BARRA DE LOGO*/
+
+/*BARRA GRIS DE MENU*/
+
+.paleta{
+background: -webkit-linear-gradient(#707172 0%, #898988 50%); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#707172 0%, #898988 50%); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#707172 0%, #898988 50%); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#707172 0%, #898988 50%);
+color:#FFFFFF;
+min-height:140px;
+overflow:auto;
+margin-bottom:10px;
+}
+
+.columnas{
+padding-top:15px;
+padding-right: 20px;
+padding-left: 20px;
+padding-bottom:5px;
+min-height:inherit;
+background: url(../img/spacer.png) repeat-y, url(../img/bak_logos/esq.png) no-repeat 2px 3px   ;
+/*background-size: 15px*/
+text-align:justify;
+	
+}
+
+.columnas div input, select {
+    margin-top: 0px;
+}
+
+
+.columnas div {
+	/*border:#0F0 1px solid;	*/
+}
+
+.columnas:hover:after {
+    content:'';
+    display:block;
+    position:absolute;
+	bottom:0px;
+    left:50%;
+    width:0;
+    height:0;
+    border-color: transparent  transparent #FFFFFF  transparent ; /*border color should be same as div div background color*/
+    border-style: solid;
+    border-width: 8px;
+}
+
+.columnas:hover{
+background:url(../img/spacer.png) repeat-y, url(../img/bak_logos/esq.png) no-repeat 2px 3px, linear-gradient(#707172 00%, #898988 80%)  ;	
+}
+
+.titulo-columnas{
+	margin-top:5px;
+	
+}
+
+.numeros {
+    font-size: 26px;
+    margin-top: -5px;
+    padding: 0;
+}
+
+.detalle {
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.numerador{
+	margin-top:15px;
+}
+
+
+
+
+/*LOCALIZACION*/
+.barra{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.barra-textos{
+font-size:25px;
+}
+
+.barra-botones{
+
+}
+/*FIN LOCALIZACION*/
+
+
+/*TAMAÑOS DE BOTONES PRINCIPALES*/
+.btn-pri{
+width:80px;
+height:80px;
+margin:0px;
+padding:0px;
+font-size:9px;
+font-weight:bold;
+color:#FFFFFF;
+/*overflow:hidden;*/
+/*float:left;*/
+/*margin:5px;*/
+}
+
+.btn-pri > div{
+width:80px;
+height:80px;
+padding-top:55px;
+}
+
+/*APAIENCIA TIPOGRAFICA*/
+button{
+border:none;
+text-transform:uppercase;
+}
+
+/*BOTONES MODULO CAJERA*/
+.reg{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/reg.png),  linear-gradient(#939393, #6a6969);}
+.reg:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/reg.png),  linear-gradient(#ef9436, #cd6813);}
+
+.sim{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/sim.png),  linear-gradient(#939393, #6a6969);}
+.sim:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/sim.png),  linear-gradient(#ef9436, #cd6813);}
+
+.cop{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/cop.png),  linear-gradient(#939393, #6a6969);}
+.cop:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/cop.png),  linear-gradient(#ef9436, #cd6813);}
+
+
+.con{background-image:  url(../img/bak_logos/esq.png),  url(../img/bak_logos/cos.png),  linear-gradient(#939393, #6a6969);}
+.con:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/cos.png),  linear-gradient(#ef9436, #cd6813);}
+
+.dir{background-image:  url(../img/bak_logos/esq.png),  url(../img/bak_logos/dir.png),  linear-gradient(#939393, #6a6969);}
+.dir:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/dir.png),  linear-gradient(#ef9436, #cd6813);}
+
+.cer{background-image:  url(../img/bak_logos/esq.png),  url(../img/bak_logos/cer.png),  linear-gradient(#939393, #6a6969);}
+.cer:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/cer.png),  linear-gradient(#ef9436, #cd6813);}
+
+
+/*BOTONES MODULO FINANCIADOR*/
+.cov{ background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/cov.png),  linear-gradient(#939393, #6a6969);}
+.cov:hover{background-image: url(../img/bak_logos/esq_hov.png),  url(../img/bak_logos/cov.png),  linear-gradient(#ef9436, #cd6813);}
+
+.disk{ background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/dis.png),  linear-gradient(#939393, #6a6969);}
+.disk:hover{background-image: url(../img/bak_logos/esq_dis.png),  url(../img/bak_logos/dis.png),  linear-gradient(#4cb5dd, #00a5df);}
+
+.dtr{ background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/dtr.png),  linear-gradient(#939393, #6a6969);}
+.dtr:hover{background-image: url(../img/bak_logos/esq_hov.png),  url(../img/bak_logos/dtr.png),  linear-gradient(#ef9436, #cd6813);}
+
+.dar{ background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/dar.png),  linear-gradient(#939393, #6a6969);}
+.dar:hover{background-image: url(../img/bak_logos/esq_hov.png),  url(../img/bak_logos/dar.png),  linear-gradient(#ef9436, #cd6813);}
+
+/*BOTONES MODULO GESTION ADMINISTRATIVA*/
+.glo{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/glo.png),  linear-gradient(#939393, #6a6969);}
+.glo:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/glo.png),  linear-gradient(#ef9436, #cd6813);}
+
+.alo{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/alo.png),  linear-gradient(#939393, #6a6969);}
+.alo:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/alo.png),  linear-gradient(#ef9436, #cd6813);}
+
+.rpr{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/rpr.png),  linear-gradient(#939393, #6a6969);}
+.rpr:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/rpr.png),  linear-gradient(#ef9436, #cd6813);}
+ 
+ /*BOTONES MODULO GERENTE PRESTADOR*/
+.usu{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/use2.png),  linear-gradient(#939393, #6a6969);}
+.usu:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/use2.png),  linear-gradient(#ef9436, #cd6813);}
+
+.res{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/res.png),  linear-gradient(#939393, #6a6969);}
+.res:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/res.png),  linear-gradient(#ef9436, #cd6813);}
+
+.est{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/est.png),  linear-gradient(#939393, #6a6969);}
+.est:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/est.png),  linear-gradient(#ef9436, #cd6813);}
+
+.ven{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/ven.png),  linear-gradient(#939393, #6a6969);}
+.ven:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/ven.png),  linear-gradient(#ef9436, #cd6813);}
+
+.rec{background-image: url(../img/bak_logos/esq.png),  url(../img/bak_logos/rec.png),  linear-gradient(#939393, #6a6969);}
+.rec:hover{background-image: url(../img/bak_logos/esq_hov.png), url(../img/bak_logos/rec.png),  linear-gradient(#ef9436, #cd6813);}
+
+
+.reg:hover:after, .sim:hover:after, .cop:hover:after, .con:hover:after, .dir:hover:after, .cer:hover:after, .usu:hover:after, .res:hover:after, .est:hover:after, .ven:hover:after, .rec:hover:after{
+/*content: attr(a);
+border: none;
+background-color:#ccc;
+border-radius: 50px;
+color:#666666;
+font-size:3px;
+font-weight:normal;
+position:fixed;
+padding: 10px;
+z-index: 9999;
+margin-left: -40px;
+margin-top: 10px;
+width:80px;
+height:10px;
+box-shadow: 0 0px 8px 5px #ccc;
+-webkit-animation: notasistem 2s;
+-moz-animation: notasistem 2s;
+-animation: notasistem 2s;*/
+}
+
+
+@-webkit-keyframes notasistem{
+0%{opacity:0.0;}
+20%{opacity:1;}
+100%{opacity:0.8;}
+}
+
+@-moz-keyframes notasistem{
+0%{opacity:0.0;}
+20%{opacity:1;}
+100%{opacity:0.8;}
+}
+
+@keyframes notasistem{
+0%{opacity:0.0;}
+20%{opacity:1;}
+100%{opacity:0.8;}
+}
+
+
+/*APARIENCIA DE BOTONES SECUNDARIOS*/
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    /*font-weight: 400;*/
+    line-height: 1.42857143;
+    text-align: center;
+    /*white-space: nowrap;*/
+    vertical-align: middle;
+   /* -ms-touch-action: manipulation;
+    touch-action: manipulation;*/
+    cursor: pointer;
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+    border: 1px solid transparent;
+	border-radius: 10px;
+    border-bottom-right-radius: 0px;
+	/*background-size: 55px;*/
+	color:#FFFFFF;
+	font-weight:bold;
+	
+}
+
+.btn:hover{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);	
+}
+
+
+.dis_ram{
+background-image: url(../img/ICO_LIN/dis-ram.png),  linear-gradient(#4cb5dd, #00a5df);
+background-size: 30px 30px;
+}
+.dis_ram:hover{
+background-image: url(../img/ICO_LIN/dis-ram.png),  linear-gradient(#ef9436, #cd6813);
+background-size: 30px 30px;
+}
+
+
+/*formulario*/
+input, select{
+margin-top: 5px;
+}
+.form-control{
+    display: block;
+    /*width: 100%;*/
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;/*
+    background-image: none;*/
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+	
+border:none;
+border-radius: 5px 5px 0px 5px;
+}
+
+.form-control:focus {
+    border-color: #66AFE9;
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+
+
+
+select option  {
+padding:25px;
+}
+
+.select {
+	border-radius: 5px 5px 0px 5px;
+  overflow: hidden;
+  background: #fff url(../img/select.png) no-repeat 100% center;
+}
+.select select {
+    width: 120%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+textarea{
+-webkit-appearance: none;
+-moz-appearance:none;
+appearance:none;
+border:none;
+border-radius: 5px 5px 0px 5px;
+resize: none;
+}
+
+option:hover,
+option:focus,
+option:active,
+option:checked {
+background: linear-gradient(#EF9436, #CD6813);
+}
+
+
+
+
+
+/*CONJUNTO DE CHECK MODIFICADOS*/
+
+.check_input {
+    display:none;
+}
+
+.check_input + .check_label span {
+    background:none;
+	font-weight:normal;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.check_input:hover + .check_label span {
+    display:inline-block;
+	padding-left:3px;
+	padding-right:3px;
+	border-radius:5px;
+    background:none;
+	font-weight:normal;
+	font-size:12px;
+    cursor:pointer;
+	background:#666;
+	color:#333;
+}
+
+.check_input:checked + .check_label span {
+    display:inline-block;
+	padding-left:3px;
+	padding-right:3px;
+	border-radius:5px;
+    background:none;
+	font-weight:normal;
+	font-size:12px;
+    cursor:pointer;
+	background:#FFFFFF;
+	color:#999999;
+}
+
+.check_label {
+	margin-bottom: 0px;
+}
+/*
+<input class="check_input" id="filtro1" name="filtro1" ng-click="vm.showAndHide(1,vm.checkboxModel.value1)" ng-model="vm.checkboxModel.value1" type="checkbox"/>
+   <label class="check_label" for="filtro1">
+   	<span class="check_span">Tipo</span>
+   </label>
+*/
+
+
+/*EXPORTAR*/
+.exportar{
+position: absolute;
+right:50px;
+bottom:0;
+margin: auto;
+height: 50px;
+width: 70px;
+border-top-right-radius:10px;
+border-top-left-radius:10px;
+background:#333333;
+z-index:10;
+opacity: 0.3;
+}
+
+.exportar:hover{
+opacity: 1;
+}
+
+.exportar > div{
+display:inline-block;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+.exe{
+background-image: url(../img/exc.png);
+background-repeat:no-repeat;
+width:28px;
+height:32px;
+margin-left:5px;
+}
+
+.pdf{
+background-image:url(../img/pdf.png);
+background-repeat:no-repeat;
+width:28px;
+height:32px;
+}
+
+.exe:hover{
+background-image:url(../img/exch.png);
+background-repeat:no-repeat;
+}
+
+.pdf:hover{
+background-image:url(../img/pdfh.png);
+background-repeat:no-repeat;
+}
+
+/*FIN EXPORTAR*/
+
+/*******************TABLAS DINAMICAS **************************/
+
+
+table thead tr th {
+    background: #999999;
+}
+
+.par {
+    background-color:#ededee;
+}
+.impar {
+    background-color:#CCCCCC;
+}
+
+.par:hover, .impar:hover{
+	background-color:#333;
+	color:#FFF;
+}
+
+tbody > tr {
+    border-top: 5px #FFF solid;
+    font-size: 12px;
+    font-weight: bold;
+    background: #CCC;
+    margin: 5px;
+}
+td, table thead tr th{
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*******************TABLAS DINAMICAS CON JAVA**************************/
+
+
+/*NOTIFICACIONES RAM*/
+
+
+.notificaciondiv {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+	text-transform:uppercase;
+    text-align: center;
+	border-radius: 10px;
+    border-bottom-right-radius: 0px;
+	color:#FFFFFF;
+
+}

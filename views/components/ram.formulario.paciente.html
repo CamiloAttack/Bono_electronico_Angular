@@ -1,0 +1,47 @@
+<div class="row">
+
+    <div id="formularioInicial" class="ubi container-fluid">
+        <form class="form-inline" role="form">
+            <div class="row">
+                <div class="form-group">
+
+                    <div class="ico_tit"></div>
+                    Titular:
+                    <span ></span>{{vm.atencion.datosTitular.nombre}}
+  
+                    Rut: {{vm.atencion.datosTitular.rut || rut }} {{vm.servicioLocal.rutNuevoOantiguo}}
+                   </div>
+            </div>
+            <div class="row">
+
+                <div class="form-group pad-sup ico_ase">
+                    <div class="input-group pad-sup">
+                        <span class="input-group-addon">
+                            <span id="icoOk" ng-show="vm.tieneIsapre" class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            <span id="icoRe" ng-hide="vm.tieneIsapre" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </span>
+                        <input id="RutBeneficiario" class="form-control" ng-disabled="vm.state !== 'simulacion'" placeholder="12.345.678-9" type="text" ng-rut rut-format="blur" ng-model="vm.atencion.datosBeneficiario.rut">
+                    </div>
+                    <input id="NombreBeneficiario" class="form-control pad-sup" ng-disabled="vm.tipoAtencion == PARTICULAR || vm.state !== 'simulacion'" ng-model="vm.atencion.datosBeneficiario.nombre" placeholder="Nombre" type="text">
+                    <input id="ApellidoPaternoBeneficiario" class="form-control pad-sup" ng-disabled="vm.tipoAtencion !== 'PARTICULAR' || vm.state !== 'simulacion'" placeholder="Apellido Paterno" ng-model="vm.atencion.datosBeneficiario.apellidoPaterno" type="text">
+                    <input id="ApellidoMaternoBeneficiario" class="form-control pad-sup" ng-disabled="vm.tipoAtencion !== 'PARTICULAR' || vm.state !== 'simulacion'" placeholder="Apellido Materno" ng-model="vm.atencion.datosBeneficiario.apellidoMaterno" type="text">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group pad-sup disp">
+                    <div class="ico_seg"></div>
+                    
+                    <span ng-show="vm.tipoAtencion == 'ONLINE' || vm.atencion.datosAtencion.estadoAtencion == 'PROCESADO' || vm.atencion.datosAtencion.tipoAtencion == 'ONLINE'">{{vm.atencion.datosIsapre.nombreIsapre}}</span>
+                    <span ng-show="vm.tipoAtencion == 'ONLINE' || vm.atencion.datosAtencion.estadoAtencion == 'PROCESADO' || vm.atencion.datosAtencion.tipoAtencion == 'ONLINE'">{{vm.atencion.datosSeguro.nombreSeguro}}</span>
+                    <span ng-show="vm.tipoAtencion == 'ONLINE' || vm.atencion.datosAtencion.estadoAtencion == 'PROCESADO' || vm.atencion.datosAtencion.tipoAtencion == 'ONLINE'">{{vm.atencion.datosCcaf.nombreCcaff}}</span>
+                    <!--span ng-show="vm.tipoAtencion == 'PARTICULAR'">{{vm.tipoAtencion}}</span>
+                    <span ng-show="vm.tipoAtencion == 'ONLINE'">{{vm.tipoAtencion}} </span-->
+                    <span>{{vm.tipoAtencion}}  Sucursal : {{vm.datosSesion.nombreSucursal}}  Razón Social : {{vm.datosSesion.razonSocialRut}}  </span>
+                   
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

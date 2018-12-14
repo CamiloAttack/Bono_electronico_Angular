@@ -1,0 +1,266 @@
+
+<div class="col-xs-12 col-sm-6 co6-me-6" id="form_pago">
+ 
+
+    <div id="execedentes" class="row  lin-ver pad" ng-show="vm.servicioLocal.datosPaciente.montoExcedente">
+        <div class="col-xs-12 col-sm-12 col-me-12 ver-ver tit-tab">EXCEDENTE DISPONIBLE</div>
+        <div class="col-xs-12 col-sm-12 col-me-12 bg-greya">
+ 
+          <div class="col-xs-12 col-sm-12 col-me-12 tit-tab">
+  
+              <h3 id="exca" class="pad-sup">{{ vm.atencion.datosPago.totales.montoExcedentePendiente  }}</h3>
+
+
+          </div>
+         
+        </div>
+    </div>   
+
+<form name="FormPago" id="FormPago" ng-submit="vm.agragarPago()">
+
+     <div class="row azu-azu lin-azu pad"  ng-app ng-controller="vm.seleccionTipoPago">
+        <div class="col-xs-12 col-sm-12 col-me-12 tit-tab">MEDIO DE PAGO</div>
+        <div class="col-xs-12 col-sm-12 col-me-12 bg-greya tit-tab">
+          <select id="for-pag"  class="form-control" ng-model="myDropDown" ng-change="vm.seleccionTipoPago()">
+            <option id="SE" value='0' >SELECCIONE UN MEDIO DE PAGO</option>
+            <option id="id_efectivo" value="EFECTIVO"  >EFECTIVO</option>
+            <option id="id_cheque" value='CHEQUE'>CHEQUE</option>
+            <!--<option id="TCL" value='TC'>TARJETA CASA COMERCIAL</option>
+            <option id="DEL" value='DE'>TARJETA BANCARIA</option>-->
+            <option id="id_excedente" value='EXCEDENTE' ng-show="vm.servicioLocal.datosPaciente.montoExcedente">PAGO CON EXCEDENTE</option>
+            <!--option id="CCL" value='credito_ccaf'>CREDITO CCAF</option>
+            <option id="BPL" value='bono_pre_emitido'>BONO PRE EMITIDO</option>
+            <option id="EPL" value='emitir_pagare'>EMITIR PAGARE</option-->
+          </select>
+        </div> 
+        <div class="col-xs-12 col-sm-12 col-me-12 bg-greya tit-tab">
+            <div ng-show="myDropDown=='EFECTIVO'" id="id_efectivo_pago" >                
+          
+                <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+                    <input type="text" class="form-control" id="monto_efectivo" name="monto"  placeholder="EFECTIVO" ng-model="vm.pago.monto" ng-currency fraction="0"  ng-disabled="vm.pagos.efectivo.monto>0 || vm.totalPendiente() === 0"  ng-valid-min="vm.totalPendiente()">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+                    <input type="text" class="form-control" id="EF_1" placeholder="CAMBIO" ng-model="vm.cambioAdevolver" ng-currency fraction="0"  disabled="disabled"/>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+                    <button id="efectivo_efectivo" value="EFECTIVO" type=""  class="btn azu-azu" ng-click="vm.agragarPago()" ng-disabled="vm.pagos.efectivo.monto>0 || vm.totalPendiente() === 0">AGREGAR
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+            </div>
+          <div ng-show="myDropDown=='CHEQUE'"  id="id_cheque_pago">
+
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+                
+ 
+                <input id="id_cheque_numero" type="text"  data-tipocampo="string" class="form-control campo_validado" placeholder="N° CHEQUE" title="Indique el N° de Cheque. Ej:0005563" ng-model="id_cheque_numero"/>
+                <div class='tooltip_error' id="id_cheque_numero_error"></div>
+  
+                <!--input id="id_cheque_numero" type="text"  class="form-control" placeholder="N° CHEQUE" title="Indique el N° de Cheque. Ej:0005563" ng-model="id_cheque_numero"  ng-change ="vm.validaCheque()" required /-->
+
+                <input id="id_cheque_serie"  type="text" data-tipocampo="num" class="form-control campo_validado" placeholder="N° SERIE" title="Indique el N° de Serie. Ej:30"  />
+                <div class="tooltip_error" id="id_cheque_serie_error"></div>
+
+                <input id="id_cheque_telefono" type="text" class="form-control" placeholder="TELEFONO" title="Indique el N° de Teléfono. Ej:0000000000"/>
+                <div class="tooltip_error" id="id_cheque_telefono_error"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+
+                <input id="id_cheque_monto"  type="text" class="form-control"  name="monto" placeholder="EFECTIVO" ng-model="vm.pago.monto" ng-currency fraction="0"  ng-disabled="vm.pagos.efectivo.monto>0 || vm.totalPendiente() === 0" min="0">
+                <div class="tooltip_error" id="id_cheque_monto_error"></div>                
+                <div class="col-xs-12 col-sm-6 col-me-6 ajust">    
+                    <select id="id_cheque_banco"  name="Seleccione un Banco" class="form-control ng-valid ng-isolate-scope ng-not-empty ng">
+                        <option value=''>Selecciones Banco</option>                          
+                        <option value='1'>Banco BICE</option>                            
+                        <option value='2'>BANCO BTG Pactual</option>                     
+                        <option value='3'>Banco de Chile  </option>                      
+                        <option value='4'>Banco Consorcio </option>                      
+                        <option value='5'>Banco de Crédito e Inversiones  </option>      
+                        <option value='6'>Banco de la Nación Argentina </option>         
+                        <option value='7'>Banco do Brasil</option>                       
+                        <option value='8'>Banco Falabella </option>                      
+                        <option value='9'>Banco Internacional </option>                  
+                        <option value='10'>Banco Itau Chile</option>                     
+                        <option value='11'>Banco Paris  </option>                         
+                        <option value='12'>Banco Penta </option>                          
+                        <option value='13'>Banco Ripley  </option>                        
+                        <option value='14'>Banco Santander-Chile </option>                
+                        <option value='15'>Banco Security</option>                        
+                        <option value='16'>BBVA  </option>                                
+                        <option value='17'>Corp Banca </option>                           
+                        <option value='18'>Deutsche Bank  </option>                       
+                        <option value='19'>HSBC Bank Chile </option>                      
+                        <option value='20'>JPMorgan Chase Bank </option>                  
+                        <option value='21'>Rabobank Chile</option>                    
+                        <option value='23'>The Bank of Tokyo-Mitsubishi UFJ, Ltd.</option>
+                    </select>
+                <div class="tooltip_error" id="id_cheque_banco_error"></div>                    
+                </div>
+              <input  id="id_cheque_rut_titular"  type="text" class="form-control"  name="rut"  placeholder="RUT - TITULAR DE LA CUENTA" title="Indique el N° de RUT. Ej:00.000.000-0">
+              <div class="tooltip_error" id="id_cheque_rut_titular_error"></div>        
+
+  
+
+            </div>
+            <div id="mensaje2" class="col-xs-12 col-sm-12 col-me-12 warning">&nbsp;</div>
+      
+              <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+                  <button id="CHEQUE" value="CHEQUE" type="" class="btn azu-azu"  ng-disabled="vm.pagos.efectivo.monto>0 || vm.totalPendiente() === 0"  >AGREGAR
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </button>
+              </div>
+             
+          </div>
+
+          <div ng-show="myDropDown=='EXCEDENTE'" id="id_excedente_pago">
+            <div class="col-xs-12 col-sm-3 col-me-3 ajust">
+                 
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+
+                <input type="text" class="form-control" id="monto_excedente" name="monto" placeholder="EXCEDENTE" ng-model="vm.atencion.datosPago.totales.montoExcedenteUsar" ng-currency fraction="0"   min="0">    
+
+
+            </div>
+            <div class="col-xs-12 col-sm-3 col-me-3 ajust">
+                 
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+                <button id="efectivo_excedente" value="" type="" class="btn azu-azu" ng-click="vm.agragarPago()" >AGREGAR
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </button>
+            </div>
+         
+          </div>
+          <div ng-show="myDropDown=='credito_ccaf'">
+
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+              <input type="text" class="form-control" placeholder="DISPONIBLE: 000.000.000,00"
+              disabled="disabled" />
+              <input type="text" class="form-control" id="monto_caja" 
+              title="Ingrese un monto" onKeyUp="devolucion(this, 6, 2);" placeholder="MONTO A UTILIZAR"
+              />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+              <select id="id_ccaf_cuotas" class="form-control" title="Seleccione el numero de cuotas" required>
+                <option value='0'>Seleccione las cuotas</option>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+              </select>
+            </div>
+            <div id="mensaje6" class="col-xs-12 col-sm-12 col-me-12">&nbsp;</div>
+            <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+              
+              disabled="disabled">AGREGAR <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button-->
+             <button id="CCAF" value="CREDITO CCAF" type="" class="btn azu-azu" ng-click="vm.agragarPago()" ng-disabled="vm.pagos.efectivo.monto>0 || vm.totalPendiente() === 0">
+            </div>
+
+
+            </div>
+          </div>
+          <div ng-show="myDropDown=='bono_pre_emitido'">
+            <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+              <input id="monto_pagare"   disabled="disabled" type="text" class="form-control"/>
+              <input id="dato1_p"  type="text" class="form-control" placeholder="DIRECCION" title="Indique la dirección del titular del pagare a emitir" />
+
+            </div>
+
+            <div id="mensaje8" class="col-xs-12 col-sm-12 col-me-12 warning">&nbsp;</div>
+            <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+              <button id="EP" type="" value="PAGARE" class="btn azu-azu"
+              disabled="disabled">AGREGAR <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+            </div>
+          </div>
+          <div ng-show="myDropDown=='emitir_pagare'">
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+              <select id="BP_1" class="form-control" title="Selecciona una ISAPRE" required>
+                <option value='0'>Seleccione ISAPRE</option>
+                <option value='1'>CONSALUD</option>
+              </select>
+              <input id="BP_2" type="date" class="form-control" placeholder="FECHA DE EMISION" title="Indique la fecha de emisión del bono"/>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-me-6 ajust">
+              <input type="text" id="BP_3" class="form-control" placeholder="FOLIO DE EMISION" title="indique N° de Folio" />
+              <input type="text" class="form-control" id="monto_bono" placeholder="MONTO" title="Indique monto del bono"
+              />
+            </div>
+            <div id="mensaje7" class="col-xs-12 col-sm-12 col-me-12">&nbsp;</div>
+            <div class="col-xs-12 col-sm-12 col-me-12 ajust">
+              <button id="BP" value="BONO" type="submit" class="btn azu-azu"   disabled="disabled">AGREGAR <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+</form>
+
+<div class="col-xs-12 col-sm-6 co6-me-6">
+    <div class="row nar-nar lin-nar pad">
+        <div class="col-xs-12 col-sm-12 co6-me-12 tit-tab">TOTAL DE PRESTACIONES</div>
+        <div class="col-xs-12 col-sm-12 co6-me-12 bg-greya text-center">
+            <h1 class="pad-sup">
+                <!--<input id="pres" type="text"  class="sin text-center" disabled="disabled"/>-->
+                <div id="pres">{{vm.atencion.datosPago.totales.total || 0 | currency:"$":0}}</div>
+            </h1>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-me-6">ENTIDADES</div>
+        <div class="col-xs-6 col-sm-6 col-me-6 text-right">APORTE</div>
+        <div class="col-xs-6 col-sm-6 col-me-6 bg-greya">ISAPRE</div>
+        <div id="isap" class="col-xs-6 col-sm-6 col-me-6 bg-greya text-right">{{vm.atencion.datosPago.totales.montoIsapre || 0 | currency:"$":0}}</div>
+        <div class="col-xs-6 col-sm-6 col-me-6 bg-greyb">SEGURO</div>
+        <div id="segu" class="col-xs-6 col-sm-6 col-me-6 bg-greyb text-right">{{vm.atencion.datosPago.totales.montoSeguro || 0 | currency:"$":0}}</div>
+        <div class="col-xs-6 col-sm-6 col-me-6 bg-greya">CCAF</div>
+        <div id="ccaf" class="col-xs-6 col-sm-6 col-me-6 bg-greya text-right">{{vm.atencion.datosPago.totales.montoCcaf || 0 | currency:"$":0}}</div>
+        <div class="col-xs-6 col-sm-6 col-me-6 bg-greyc">TOTAL BONIFICACIONES</div>
+        <div id="boni" class="col-xs-6 col-sm-6 col-me-6 bg-greyb text-right">{{(vm.atencion.datosPago.totales.montoIsapre + vm.atencion.datosPago.totales.montoSeguro +  vm.atencion.datosPago.totales.montoCcaf || 0) |  currency:"$":0}}</div>
+    </div>
+    <div class="row  pad pad-sup">
+        <div class="col-xs-6 col-sm-6 col-me-6 nar-nar tit-tab pad-sup">
+            <div class="col-xs-12 col-sm-12 col-me-12 text-right">COPAGO</div>
+
+        </div>
+        <div id="coop" class="col-xs-6 col-sm-6 col-me-6 tit-tab bg-greyb pad-sup text-right">{{vm.atencion.datosPago.totales.copago || 0 | currency:"$":0}}</div>
+        <div id="cargas">
+            <table id="tablaCargaPagos" st-table="rowCollection" class="table">
+
+                <tbody>
+                    <tr ng-repeat="pago in vm.agregaRowMediosPago">
+                        <td class="col-xs-6 col-sm-6 col-me-6 azu-azu tit-tab pad-sup ">
+                            <div class="col-xs-12 col-sm-12 col-me-12 text-right">
+
+                                <span id="eliminar" class="glyphicon glyphicon-remove" aria-hidden="true" ng-click="vm.removePago(pago)"></span>
+                                &nbsp;
+                                {{pago.tipo}}</div>
+
+                        </td>
+
+                        <td class="col-xs-6 col-sm-6 col-me-6 tit-tab bg-greyb pad-sup" class="valor">
+                            <div class="class_{{pago.tipo}}">{{pago.monto || 0 | currency:"$":0}}</div>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="total" class="col-xs-6 col-sm-6 col-me-6 roj-roj tit-tab pad-sup">
+                <div id="total-mes" class="col-xs-12 col-sm-12 col-me-12 text-right">
+                    TOTAL PENDIENTE</div>
+            </div>
+            <div id="tota_vis" class="col-xs-6 col-sm-6 col-me-6 tit-tab bg-greyb pad-sup">{{vm.totalPendiente() || 0 | currency:"$":0}}</div>
+            <input type="hidden" id="tota" class="form-control"/>
+            <div class="clearfix visible-xs-block visible-sm-block"></div>
+
+        </div>
+    </div>
+ 
+

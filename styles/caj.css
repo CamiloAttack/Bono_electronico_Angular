@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.numeros{
+font-size:26px;
+padding:0px;
+margin-top:-5px;
+}
+
+.detalle{
+font-size:12px;
+color:#CCCCCC;
+}
+
+.recacudado{
+float:right;
+width:200px;
+}
+
+td  {
+ padding:5px;
+}
+
+
+td  div  input {
+background:#FFFFFF;
+border:none;
+font-size:12px;
+}
+
+th {
+background:#FFFFFF;
+padding-top:15px;
+padding-bottom:10px;
+}
+
+
+/*TABLAS DINAMICAS CON JAVA*/
+.par {
+    background-color:#999999;
+}
+.impar {
+    background-color:#CCCCCC;
+}

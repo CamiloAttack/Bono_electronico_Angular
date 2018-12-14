@@ -1,0 +1,419 @@
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+}
+.form-inline .ui-select-container .ui-select-toggle, .form-inline .ui-select-container .ui-select-search {
+    width: 100%;
+}
+.form-inline .ui-select-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+.color-bg-girs__a {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+}
+.color-bg-girs__b {
+    background: #ccc none repeat scroll 0 0;
+    color: #000;
+}
+.color-bg-girs__c {
+    background: #999 none repeat scroll 0 0;
+    color: #000;
+}
+.color-ln-roja {
+    border: 1px solid #ce0920;
+}
+.color-ln-blanca {
+    border: 2px solid #fff;
+}
+.color-ln-verde {
+    border: 1px solid #7bba6e;
+}
+.color-ln-azul {
+    border: 1px solid #707173;
+}
+.cero {
+    border: 0 none;
+    padding: 0;
+}
+.log-log {
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.panel-footer {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    text-align: center;
+}
+.ico_nom_financiador {
+    margin-bottom: 20px;
+    margin-left: -15px;
+    position: relative;
+}
+.abajo {
+    bottom: 0;
+    padding-bottom: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.width {
+    width: 200px;
+}
+.alto {
+    height: 95px;
+}
+.alto__a {
+    height: 270px;
+}
+.alto__b {
+    height: 220px;
+}
+.center-block {
+    margin: 0 auto;
+    text-align: center;
+}
+.center-block--c {
+    margin: 0 auto;
+    width: 300px;
+}
+.titulo {
+    color: #ccc;
+    font-size: 10.5px;
+    text-align: center;
+}
+.titulo:hover {
+    color: #999;
+}
+.titulo--2 {
+    color: #ccc;
+    font-size: 10px;
+    height: 10px;
+    margin-top: 35px;
+    overflow: hidden;
+    text-align: left;
+    width: 200px;
+}
+.huella {
+    background-image: url("../images/spritebox-sprite.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    bottom: 0;
+    display: inline-block;
+    height: 300px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 211px;
+}
+.btnAperturaCaja {
+    margin-top: 25px;
+}
+.use {
+    width: 40px;
+}
+.btn-default2 {
+}
+.btn-default2:focus {
+    font-weight: bold;
+    opacity: 1;
+}
+.btn2 {
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+.myGrid {
+    height: 250px;
+    width: 500px;
+}
+.exportar {
+    background: #333333 none repeat scroll 0 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px 0;
+    bottom: 0;
+    float: right;
+    height: 50px;
+    margin: auto;
+    opacity: 0.3;
+    position: absolute;
+    right: 95px;
+    width: 35px;
+    z-index: 10;
+}
+.exportar2 {
+    background: #333333 none repeat scroll 0 0;
+    border-top-left-radius: 10px 0;
+    border-top-right-radius: 10px;
+    bottom: 0;
+    float: right;
+    height: 50px;
+    margin: auto 15px auto auto;
+    opacity: 0.3;
+    position: relative;
+    right: 45px;
+    top: -50px;
+    width: 35px;
+    z-index: 10;
+}
+.exportar:hover {
+    opacity: 1;
+}
+.exportar2:hover {
+    opacity: 1;
+}
+.exe {
+    background-image: url("../images/exc.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 28px;
+}
+.pdf {
+    background-image: url("../images/pdf.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 28px;
+}
+.exe:hover {
+    background-image: url("../images/exch.png");
+    background-repeat: no-repeat;
+}
+.pdf:hover {
+    background-image: url("../images/pdfh.png");
+    background-repeat: no-repeat;
+}
+.check_input {
+    display: none;
+}
+.check_input + .check_label span {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+}
+.check_input:hover + .check_label span {
+    background: #666 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.check_input:checked + .check_label span {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #999999;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.check_label {
+    margin-bottom: 0;
+}
+.container-columna-header-grilla {
+    background: rgba(0, 0, 0, 0) linear-gradient(#707172 0%, #898988 50%) repeat scroll 0 0;
+    color: #ffffff;
+    margin-bottom: 10px;
+    min-height: 140px;
+    overflow: auto;
+}
+.columna-header-grilla {
+    background: url("../images/spacer.png") repeat-y scroll 0 0%, rgba(0, 0, 0, 0) url("../images/esq.png") no-repeat scroll 2px 3px;
+    font-size: 13px;
+    margin-left: 0;
+    min-height: inherit;
+    padding: 15px 20px 5px;
+    text-align: justify;
+}
+.columna-header-grilla div input, select {
+    margin-top: 0;
+}
+.columna-header-grilla div {
+}
+.columna-header-grilla:hover::after {
+    border-color: transparent transparent #ffffff;
+    border-style: solid;
+    border-width: 8px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    width: 0;
+}
+.columna-header-grilla:hover {
+    background: url("../images/spacer.png") repeat-y scroll 0 0%, url("../images/esq.png") no-repeat scroll 2px 3px, rgba(0, 0, 0, 0) linear-gradient(#707172 0%, #898988 80%) repeat scroll 0 0;
+}
+.titulo-columna {
+    margin-top: 5px;
+}
+.numeros {
+    font-size: 26px;
+    margin-top: -5px;
+    padding: 0;
+}
+.detalle {
+    color: #cccccc;
+    font-size: 12px;
+}
+.numerador {
+    margin-top: 15px;
+}
+table thead tr th {
+    background: #999999 none repeat scroll 0 0;
+}
+.par {
+    background-color: #ededee;
+}
+.impar {
+    background-color: #cccccc;
+}
+.par:hover, .impar:hover {
+    background-color: #333;
+    color: #fff;
+}
+tbody > tr {
+    background: #ccc none repeat scroll 0 0;
+    border-top: 5px solid #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+}
+td, table thead tr th {
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+}
+tr.theadTrTablaGrillas {
+    background: #999999 none repeat scroll 0 0;
+    height: 60px;
+    padding: 9px 18px 20px;
+    text-align: center;
+}
+tr.tfootTrTablaGrillas {
+    height: 60px;
+    padding: 9px 18px 20px;
+    text-align: center;
+}
+table.dataTable tbody tr {
+}
+.odd {
+    background-color: #ededee;
+}
+.event {
+    background-color: #cccccc;
+}
+.PagoSeleccionado {
+    background-color: #50504f;
+    color: #fff;
+}
+.paginacion {
+    padding-left: 0;
+}
+div.dataTables_paginate {
+    float: left;
+}
+.pagination li a {
+    color: #666;
+}
+.pagination li a:hover {
+    background: #333 none repeat scroll 0 0;
+    border-color: #333;
+    color: #fff;
+}
+.modal_bono {
+    background-color: #fff;
+    font-size: 12px;
+    margin: 10px;
+}
+.modal-content {
+    background: url("../images/esq_ver.png") no-repeat scroll 0 0%, rgba(0, 0, 0, 0) linear-gradient(#7bba6e, #669966) repeat scroll 0 0;
+    border-radius: 15px 15px 0 0;
+}
+.modal-titulo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.modal_bono > button {
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    left: 10px;
+    margin-top: 0;
+    position: inherit;
+    right: 10px;
+    width: 100%;
+}
+.table > tbody tr td {
+    height: 32px;
+    padding: 5px;
+}
+.table > tbody tr:hover td {
+    background-color: #333;
+    color: #fff;
+}
+.copia_contenedor {
+    bottom: 0;
+    height: 400px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.copia {
+    -moz-user-select: none;
+    font-size: 100px;
+    margin: 200px;
+    opacity: 0.1;
+    transform: rotate(-30deg);
+}
+.no_valido{
+    margin-top: 100px;
+
+
+}
+.medio_pago_recacudado {
+    float: right;
+    width: 200px;
+}
+.numeros {
+    font-size: 26px;
+    margin-top: -5px;
+    padding: 0;
+}
+.input-group-addon {
+    cursor: pointer;
+}

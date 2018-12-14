@@ -1,0 +1,18 @@
+
+.btn-default {
+/*color:#FFFFFF;*/
+/*opacity: 0.5;*/
+}
+
+
+.btn-default:focus {
+font-weight:bold;
+/*color:#FFFFFF;*/
+opacity: 1;
+}
+
+
+.btn {
+    border: 1px solid ;
+    border-radius: 0 0 0;
+}

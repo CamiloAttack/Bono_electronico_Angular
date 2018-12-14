@@ -1,0 +1,84 @@
+CACHE MANIFEST
+# Cache manifest version 0.0.1
+# If you change the version number in this comment,
+# the cache manifest is no longer byte-for-byte
+# identical.
+
+CACHE:
+#---------------------
+#	html
+#---------------------
+index.html
+cdv/index.html
+ram/index.html
+caj/index.html
+
+
+
+
+#---------------------
+#	css
+#---------------------
+cdv/css/cdv.css
+ram/css/ram.css
+caj/css/caj.css
+css/bootstrap.min.css
+css/bootstrap-datetimepicker.min.css
+css/main.css
+
+
+
+
+#---------------------
+#	javascript
+#---------------------
+js/jquery-2.1.4.min.js
+js/numeral.js
+js/moment.min.js
+js/offline.min.js
+js/jquery.Rut.js
+js/bootstrap.min.js
+js/bootstrap-datetimepicker.min.js
+js/main.js
+js/alasql.min.js
+js/bloodhound.min.js
+js/collection-1.1.min.js
+js/typeahead.bundle.min.js
+js/manifesto.js
+js/moment-with-locales.js
+js/typeahead.jquery.min.js
+cdv/js/cdv.js
+ram/js/ram.js
+caj/js/caj.js
+
+
+
+
+#---------------------
+#	fonts
+#---------------------
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2
+
+#---------------------
+#	data
+#---------------------
+#data/data.json
+ram/jtocv2-offline.jar
+ram/jtocv2.jar
+
+NETWORK:
+#*
+
+FALLBACK:
+#---------------------
+#	html
+#---------------------
+#offline.html
+index.html
+cdv/index.html
+ram/index.html
+caj/index.html

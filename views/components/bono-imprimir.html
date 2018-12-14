@@ -1,0 +1,131 @@
+<div>
+<div ng-repeat="bono in vm.atencion.datosPrestacionesComprobanteImprimir[0] track by $index"> 
+    <div class="bono">
+        <div class="row pad">
+            <div class="col-sm-4 col-me-4 col-xs-4 text-left">{{vm.atencion.datosUsuario.prestadorNombre}}
+                RUT:
+                {{vm.atencion.datosUsuario.razonSocialRut| rut }}</div>
+            <div class="col-xs-4 col-sm-4 col-me-4 text-center">COMPROBANTE DE ATENCION</div>
+            <div class="col-xs-4 col-sm-4 col-me-4 text-center">Nro. Atención    
+            {{ vm.atencion.datosFolio[bono.index_no_repite] }} 
+                {{vm.atencion._id}}</div>       
+                   
+            <div class="col-xs-4 col-sm-4 col-me-4 text-center" ng-hide="!vm.atencion.datosIsapre.nombre">Nro. Atención
+                {{vm.atencion.datosIsapre.numeroFolio}}</div>
+
+        </div>
+        <div class="row pad">
+            <div class="col-sm-6 col-me-6 col-xs-6 border-r">
+                <div>Fecha y Hora de Emisión:  
+                    {{vm.atencion.datosAtencion.fecha_unix * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</div>
+                <div>Titular:
+                    {{vm.atencion.datosTitular.nombre}}
+                    {{vm.atencion.datosTitular.apellidoPaterno}}
+                    {{vm.atencion.datosTitular.apellidoMaterno}}
+                    RUT: {{vm.atencion.datosTitular.rut | rut }}</div>
+                <div>Beneficiario:
+                    {{vm.atencion.datosBeneficiario.nombre}}
+                    {{vm.atencion.datosBeneficiario.apellidoPaterno}}
+                    {{vm.atencion.datosBeneficiario.apellidoMaterno}}
+                    RUT
+                    {{vm.atencion.datosBeneficiario.rut | rut }}</div>
+            </div>
+            <div class="col-sm-6 col-me-6 col-xs-6">
+                <div>Emisor:
+                    {{vm.atencion.datosUsuario.lugarAtencionNombre}}
+                    RUT:
+                    {{vm.atencion.datosUsuario.razonSocialRut | rut}}
+                </div>
+                <div>Tipo de Atención:
+                    {{vm.atencion.datosIsapre.nivelConvenio || 'PARTICULAR'}}</div>
+                <div>Plan/Grupo de Ingreso:
+                    {{vm.atencion.datosIsapre.plan || 'PARTICULAR'}} </div>
+            </div>
+        </div>
+        <div class="row container-fluid table-responsive pad altC">
+            <table class="table impre" id="tablabono">
+                <thead>
+                    <tr>
+                        <td class="col-sm-6 col-me-6 col-xs-6 border-r text-center">DETALLE DE PRESTACION</td>
+                        <td class="col-sm-2 col-me-2 col-xs-2 border-r text-center">VALOR</td>
+                        <td class="col-sm-2 col-me-2 col-xs-2 border-r text-center">BONIFICACIONES</td>
+                        <td class="col-sm-2 col-me-2 col-xs-2 text-center">TOTAL COPAGO</td>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <!--tr ng-repeat="prestacion in vm.atencion.datosPrestaciones"-->
+                    <tr ng-repeat="prestacion in bono">
+                        <td class="border-r">
+                            {{prestacion.codigo}} - {{prestacion.nombre}} <!--| limitTo: 15-->
+                        </td>
+
+                        <td class="text-right border-r">{{prestacion.valorPrestacion || 0 | currency:"$":0 }}</td>
+                        <td class="text-right border-r">{{prestacion.aporteFinanciador || 0 | currency:"$":0 }}</td>
+                        <td class="text-right" id="copago_{{$index}}">{{prestacion.copago || 0 | currency:"$":0}}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="border-r text-right">TOTALES</td>
+                        <td class="text-right border-r">{{  vm.atencion.totalMontoComprobante[bono.index_no_repite]  || 0 | currency:"$":0}}</td>
+                        <td class="text-right border-r">{{  vm.atencion.datosBonificacionTotales[bono.index_no_repite]  || 0 | currency:"$":0}}</td>
+                        <td class="text-right">{{  vm.atencion.datosCopagoTotales[bono.index_no_repite]  || 0 | currency:"$":0}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-me-12 border-b text-center">
+                <div class="pad-sim">DETALLE DE BONIFICACIONES</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-me-3 border-r text-center ">
+                <div class="pad-sim">ISAPRE:
+                    {{ vm.atencion.datosBonificacionTotales[$index] || 0 | currency:"$":0}}</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-me-3 border-r text-center">
+                <div class="pad-sim">COMPAÑIA DE SEGURO:
+                    {{vm.atencion.datosPago.totales.montoSeguro || 0 | currency:"$":0}}</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-me-3  border-r text-center">
+                <div class="pad-sim">CCAF:
+                    {{vm.atencion.datosPago.totales.montoCcaf || 0 | currency:"$":0}}</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-me-3 text-center">
+                <div class="pad-sim">EXCEDENTE:
+                    {{vm.atencion.totalExedenteComprobante[$index] || 0 | currency:"$":0}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-me-4 border-r">
+                <div class=" text-center fondetalle">PROFESIONAL / INSTITUCION:
+                </div>
+                <div class=" text-center border-b"> {{vm.atencion.datosUsuario.nombreRazonSocialSucursal}} {{vm.atencion.datosUsuario.razonSocialRut | rut}}</div>
+                <div class=" text-center fondetalle">MEDICO TRATANTE:</div>
+                <div class=" text-center border-b ">{{vm.atencion.datosPrestaciones[0].codigoMedico}}
+                -
+                {{vm.atencion.datosPrestaciones[0].nombreMedico}}</div>
+                <div class=" text-center fondetalle">ESPECIALIDAD:</div>
+                <div class="text-center border-b"> {{vm.atencion.datosPrestaciones[0].codigoEspecialidad}}
+              
+                {{vm.atencion.datosPrestaciones[0].nombreEspecialidad}}</div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-me-4">
+                <div class="firm "></div>
+                <div class="text-center fondetalle">FIRMA DEL PROFESIONAL</div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-me-4 text-center">
+                <div class="firm"></div>
+                <div class="text-center fondetalle">FIRMA DEL BENEFICIARIO</div>
+
+            </div>
+        </div>
+        <div ng-if="$odd"   class="text-center">COPIA</div>
+        <div ng-if="$even"   class="text-center">ORIGINAL - CLIENTE</div>
+    </div>
+</div>
+<div class="copia_contenedor">
+    <div class="copia no_valido"></div>
+
+    <div class="copia no_valido"></div>
+</div>
+</div>

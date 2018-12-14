@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8" ?><records>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>100</numeroBono>
+		<fechaEmision>2015/12/07</fechaEmision>
+		<rutPaciente>39737736-9</rutPaciente>
+		<nombrePaciente>Nash Manning</nombrePaciente>
+		<nombreMedico>Nelle Hooper</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,888</valorAtencion>
+		<bonificacionIsapre>$68.90</bonificacionIsapre>
+		<bonificacionSeguro>$57.21</bonificacionSeguro>
+		<bonificacionCCAF>$74.85</bonificacionCCAF>
+		<valorCopago>$16.29</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>101</numeroBono>
+		<fechaEmision>2015/12/11</fechaEmision>
+		<rutPaciente>21185836-2</rutPaciente>
+		<nombrePaciente>Ariel Bell</nombrePaciente>
+		<nombreMedico>Colt Frank</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,398</valorAtencion>
+		<bonificacionIsapre>$67.13</bonificacionIsapre>
+		<bonificacionSeguro>$77.99</bonificacionSeguro>
+		<bonificacionCCAF>$14.51</bonificacionCCAF>
+		<valorCopago>$22.33</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>102</numeroBono>
+		<fechaEmision>2015/12/05</fechaEmision>
+		<rutPaciente>26887580-8</rutPaciente>
+		<nombrePaciente>Kenyon Gordon</nombrePaciente>
+		<nombreMedico>Devin Butler</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$1,398</valorAtencion>
+		<bonificacionIsapre>$46.79</bonificacionIsapre>
+		<bonificacionSeguro>$81.00</bonificacionSeguro>
+		<bonificacionCCAF>$92.41</bonificacionCCAF>
+		<valorCopago>$31.57</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>103</numeroBono>
+		<fechaEmision>2015/12/17</fechaEmision>
+		<rutPaciente>30472692-K</rutPaciente>
+		<nombrePaciente>Beau Bryant</nombrePaciente>
+		<nombreMedico>Bree West</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,438</valorAtencion>
+		<bonificacionIsapre>$3.62</bonificacionIsapre>
+		<bonificacionSeguro>$38.69</bonificacionSeguro>
+		<bonificacionCCAF>$53.10</bonificacionCCAF>
+		<valorCopago>$30.53</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>104</numeroBono>
+		<fechaEmision>2015/12/16</fechaEmision>
+		<rutPaciente>5320874-6</rutPaciente>
+		<nombrePaciente>Chelsea Orr</nombrePaciente>
+		<nombreMedico>Ashton Rich</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,265</valorAtencion>
+		<bonificacionIsapre>$25.26</bonificacionIsapre>
+		<bonificacionSeguro>$19.79</bonificacionSeguro>
+		<bonificacionCCAF>$43.51</bonificacionCCAF>
+		<valorCopago>$37.24</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>105</numeroBono>
+		<fechaEmision>2015/12/08</fechaEmision>
+		<rutPaciente>27641072-5</rutPaciente>
+		<nombrePaciente>Alika Shields</nombrePaciente>
+		<nombreMedico>Odysseus Moran</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$4,089</valorAtencion>
+		<bonificacionIsapre>$66.44</bonificacionIsapre>
+		<bonificacionSeguro>$96.24</bonificacionSeguro>
+		<bonificacionCCAF>$96.18</bonificacionCCAF>
+		<valorCopago>$42.32</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>106</numeroBono>
+		<fechaEmision>2015/12/16</fechaEmision>
+		<rutPaciente>49101672-8</rutPaciente>
+		<nombrePaciente>Simon Curry</nombrePaciente>
+		<nombreMedico>Roary Stevenson</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,239</valorAtencion>
+		<bonificacionIsapre>$33.41</bonificacionIsapre>
+		<bonificacionSeguro>$45.11</bonificacionSeguro>
+		<bonificacionCCAF>$78.68</bonificacionCCAF>
+		<valorCopago>$15.91</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>107</numeroBono>
+		<fechaEmision>2015/12/02</fechaEmision>
+		<rutPaciente>9284618-0</rutPaciente>
+		<nombrePaciente>Audrey Avila</nombrePaciente>
+		<nombreMedico>Bianca Howe</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$8,706</valorAtencion>
+		<bonificacionIsapre>$72.70</bonificacionIsapre>
+		<bonificacionSeguro>$70.25</bonificacionSeguro>
+		<bonificacionCCAF>$26.59</bonificacionCCAF>
+		<valorCopago>$74.26</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>108</numeroBono>
+		<fechaEmision>2015/12/11</fechaEmision>
+		<rutPaciente>39762265-7</rutPaciente>
+		<nombrePaciente>Gregory Paul</nombrePaciente>
+		<nombreMedico>Mariko Pate</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,644</valorAtencion>
+		<bonificacionIsapre>$10.17</bonificacionIsapre>
+		<bonificacionSeguro>$19.22</bonificacionSeguro>
+		<bonificacionCCAF>$8.04</bonificacionCCAF>
+		<valorCopago>$45.12</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>109</numeroBono>
+		<fechaEmision>2015/12/13</fechaEmision>
+		<rutPaciente>37442078-K</rutPaciente>
+		<nombrePaciente>Rhoda Valentine</nombrePaciente>
+		<nombreMedico>Kirestin Trevino</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,950</valorAtencion>
+		<bonificacionIsapre>$57.44</bonificacionIsapre>
+		<bonificacionSeguro>$27.81</bonificacionSeguro>
+		<bonificacionCCAF>$37.92</bonificacionCCAF>
+		<valorCopago>$27.32</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>110</numeroBono>
+		<fechaEmision>2016/01/01</fechaEmision>
+		<rutPaciente>46932363-3</rutPaciente>
+		<nombrePaciente>Ira Rush</nombrePaciente>
+		<nombreMedico>Xander Le</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,580</valorAtencion>
+		<bonificacionIsapre>$66.76</bonificacionIsapre>
+		<bonificacionSeguro>$19.71</bonificacionSeguro>
+		<bonificacionCCAF>$97.58</bonificacionCCAF>
+		<valorCopago>$56.60</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>111</numeroBono>
+		<fechaEmision>2015/12/14</fechaEmision>
+		<rutPaciente>23050159-9</rutPaciente>
+		<nombrePaciente>Aurelia Sandoval</nombrePaciente>
+		<nombreMedico>Octavius Cotton</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,537</valorAtencion>
+		<bonificacionIsapre>$5.02</bonificacionIsapre>
+		<bonificacionSeguro>$83.55</bonificacionSeguro>
+		<bonificacionCCAF>$57.35</bonificacionCCAF>
+		<valorCopago>$6.78</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>112</numeroBono>
+		<fechaEmision>2015/12/13</fechaEmision>
+		<rutPaciente>30108375-0</rutPaciente>
+		<nombrePaciente>Petra Alford</nombrePaciente>
+		<nombreMedico>Plato Marquez</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$1,006</valorAtencion>
+		<bonificacionIsapre>$90.06</bonificacionIsapre>
+		<bonificacionSeguro>$31.34</bonificacionSeguro>
+		<bonificacionCCAF>$35.98</bonificacionCCAF>
+		<valorCopago>$7.57</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>113</numeroBono>
+		<fechaEmision>2015/12/14</fechaEmision>
+		<rutPaciente>32793630-1</rutPaciente>
+		<nombrePaciente>Maryam Blevins</nombrePaciente>
+		<nombreMedico>Clementine Patton</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$4,675</valorAtencion>
+		<bonificacionIsapre>$25.96</bonificacionIsapre>
+		<bonificacionSeguro>$72.84</bonificacionSeguro>
+		<bonificacionCCAF>$75.65</bonificacionCCAF>
+		<valorCopago>$70.66</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>114</numeroBono>
+		<fechaEmision>2016/01/03</fechaEmision>
+		<rutPaciente>48173963-2</rutPaciente>
+		<nombrePaciente>Tanya Gould</nombrePaciente>
+		<nombreMedico>Kendall Lawson</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$2,805</valorAtencion>
+		<bonificacionIsapre>$60.37</bonificacionIsapre>
+		<bonificacionSeguro>$52.69</bonificacionSeguro>
+		<bonificacionCCAF>$90.42</bonificacionCCAF>
+		<valorCopago>$16.56</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>115</numeroBono>
+		<fechaEmision>2015/12/15</fechaEmision>
+		<rutPaciente>38576390-5</rutPaciente>
+		<nombrePaciente>Sylvester Moore</nombrePaciente>
+		<nombreMedico>Emery Finch</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,983</valorAtencion>
+		<bonificacionIsapre>$65.37</bonificacionIsapre>
+		<bonificacionSeguro>$27.16</bonificacionSeguro>
+		<bonificacionCCAF>$70.39</bonificacionCCAF>
+		<valorCopago>$21.82</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>116</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>44797932-2</rutPaciente>
+		<nombrePaciente>Cleo Pierce</nombrePaciente>
+		<nombreMedico>Emma Bray</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,894</valorAtencion>
+		<bonificacionIsapre>$48.13</bonificacionIsapre>
+		<bonificacionSeguro>$36.77</bonificacionSeguro>
+		<bonificacionCCAF>$31.41</bonificacionCCAF>
+		<valorCopago>$68.86</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>117</numeroBono>
+		<fechaEmision>2015/12/04</fechaEmision>
+		<rutPaciente>7732632-4</rutPaciente>
+		<nombrePaciente>Zena Freeman</nombrePaciente>
+		<nombreMedico>Ivan Crosby</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$5,115</valorAtencion>
+		<bonificacionIsapre>$36.62</bonificacionIsapre>
+		<bonificacionSeguro>$44.88</bonificacionSeguro>
+		<bonificacionCCAF>$63.41</bonificacionCCAF>
+		<valorCopago>$25.76</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>118</numeroBono>
+		<fechaEmision>2016/01/01</fechaEmision>
+		<rutPaciente>49339699-4</rutPaciente>
+		<nombrePaciente>Martena Underwood</nombrePaciente>
+		<nombreMedico>Beverly Velez</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,465</valorAtencion>
+		<bonificacionIsapre>$38.81</bonificacionIsapre>
+		<bonificacionSeguro>$85.61</bonificacionSeguro>
+		<bonificacionCCAF>$28.97</bonificacionCCAF>
+		<valorCopago>$72.03</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>119</numeroBono>
+		<fechaEmision>2015/12/13</fechaEmision>
+		<rutPaciente>36279972-4</rutPaciente>
+		<nombrePaciente>Kaseem Boyd</nombrePaciente>
+		<nombreMedico>Hedda Robbins</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$1,378</valorAtencion>
+		<bonificacionIsapre>$88.02</bonificacionIsapre>
+		<bonificacionSeguro>$0.83</bonificacionSeguro>
+		<bonificacionCCAF>$37.05</bonificacionCCAF>
+		<valorCopago>$50.04</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>120</numeroBono>
+		<fechaEmision>2015/12/13</fechaEmision>
+		<rutPaciente>32531169-K</rutPaciente>
+		<nombrePaciente>Yasir Santiago</nombrePaciente>
+		<nombreMedico>Michelle Martin</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$6,248</valorAtencion>
+		<bonificacionIsapre>$37.35</bonificacionIsapre>
+		<bonificacionSeguro>$34.27</bonificacionSeguro>
+		<bonificacionCCAF>$78.48</bonificacionCCAF>
+		<valorCopago>$29.10</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>121</numeroBono>
+		<fechaEmision>2015/12/08</fechaEmision>
+		<rutPaciente>20914757-2</rutPaciente>
+		<nombrePaciente>Nora Becker</nombrePaciente>
+		<nombreMedico>Noelani Goff</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$2,130</valorAtencion>
+		<bonificacionIsapre>$33.78</bonificacionIsapre>
+		<bonificacionSeguro>$14.23</bonificacionSeguro>
+		<bonificacionCCAF>$92.86</bonificacionCCAF>
+		<valorCopago>$66.89</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>122</numeroBono>
+		<fechaEmision>2015/12/06</fechaEmision>
+		<rutPaciente>9584376-K</rutPaciente>
+		<nombrePaciente>Zahir Bass</nombrePaciente>
+		<nombreMedico>Rama Klein</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,527</valorAtencion>
+		<bonificacionIsapre>$74.66</bonificacionIsapre>
+		<bonificacionSeguro>$85.19</bonificacionSeguro>
+		<bonificacionCCAF>$38.50</bonificacionCCAF>
+		<valorCopago>$66.62</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>123</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>45455542-2</rutPaciente>
+		<nombrePaciente>Faith Holcomb</nombrePaciente>
+		<nombreMedico>Leila Roberts</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$7,504</valorAtencion>
+		<bonificacionIsapre>$62.45</bonificacionIsapre>
+		<bonificacionSeguro>$98.78</bonificacionSeguro>
+		<bonificacionCCAF>$37.96</bonificacionCCAF>
+		<valorCopago>$14.13</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>124</numeroBono>
+		<fechaEmision>2015/12/10</fechaEmision>
+		<rutPaciente>8398141-5</rutPaciente>
+		<nombrePaciente>Ruth Huffman</nombrePaciente>
+		<nombreMedico>Carl Benjamin</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$4,474</valorAtencion>
+		<bonificacionIsapre>$97.21</bonificacionIsapre>
+		<bonificacionSeguro>$36.70</bonificacionSeguro>
+		<bonificacionCCAF>$91.67</bonificacionCCAF>
+		<valorCopago>$91.00</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>125</numeroBono>
+		<fechaEmision>2015/12/27</fechaEmision>
+		<rutPaciente>12005793-6</rutPaciente>
+		<nombrePaciente>Robert Donovan</nombrePaciente>
+		<nombreMedico>Lana Mejia</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$0,760</valorAtencion>
+		<bonificacionIsapre>$76.76</bonificacionIsapre>
+		<bonificacionSeguro>$87.07</bonificacionSeguro>
+		<bonificacionCCAF>$36.34</bonificacionCCAF>
+		<valorCopago>$33.37</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>126</numeroBono>
+		<fechaEmision>2015/12/26</fechaEmision>
+		<rutPaciente>29274554-0</rutPaciente>
+		<nombrePaciente>Randall Nunez</nombrePaciente>
+		<nombreMedico>Dora Mathews</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,237</valorAtencion>
+		<bonificacionIsapre>$6.50</bonificacionIsapre>
+		<bonificacionSeguro>$87.72</bonificacionSeguro>
+		<bonificacionCCAF>$14.22</bonificacionCCAF>
+		<valorCopago>$13.10</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>127</numeroBono>
+		<fechaEmision>2015/12/29</fechaEmision>
+		<rutPaciente>9811384-3</rutPaciente>
+		<nombrePaciente>Cole Reyes</nombrePaciente>
+		<nombreMedico>Myra Rasmussen</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,986</valorAtencion>
+		<bonificacionIsapre>$35.69</bonificacionIsapre>
+		<bonificacionSeguro>$35.68</bonificacionSeguro>
+		<bonificacionCCAF>$48.68</bonificacionCCAF>
+		<valorCopago>$15.71</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>128</numeroBono>
+		<fechaEmision>2016/01/01</fechaEmision>
+		<rutPaciente>7979874-6</rutPaciente>
+		<nombrePaciente>Jeremy Hansen</nombrePaciente>
+		<nombreMedico>Walter Farmer</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,055</valorAtencion>
+		<bonificacionIsapre>$8.82</bonificacionIsapre>
+		<bonificacionSeguro>$42.23</bonificacionSeguro>
+		<bonificacionCCAF>$87.65</bonificacionCCAF>
+		<valorCopago>$65.43</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>129</numeroBono>
+		<fechaEmision>2015/12/29</fechaEmision>
+		<rutPaciente>22288523-K</rutPaciente>
+		<nombrePaciente>Warren Martin</nombrePaciente>
+		<nombreMedico>Ursa Gill</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$6,315</valorAtencion>
+		<bonificacionIsapre>$12.08</bonificacionIsapre>
+		<bonificacionSeguro>$31.13</bonificacionSeguro>
+		<bonificacionCCAF>$68.87</bonificacionCCAF>
+		<valorCopago>$5.92</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>130</numeroBono>
+		<fechaEmision>2015/12/17</fechaEmision>
+		<rutPaciente>34544034-8</rutPaciente>
+		<nombrePaciente>Rinah Weaver</nombrePaciente>
+		<nombreMedico>Darius Atkins</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,742</valorAtencion>
+		<bonificacionIsapre>$44.44</bonificacionIsapre>
+		<bonificacionSeguro>$86.83</bonificacionSeguro>
+		<bonificacionCCAF>$84.92</bonificacionCCAF>
+		<valorCopago>$5.24</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>131</numeroBono>
+		<fechaEmision>2015/12/10</fechaEmision>
+		<rutPaciente>44190629-3</rutPaciente>
+		<nombrePaciente>Tucker Moon</nombrePaciente>
+		<nombreMedico>Caesar Goff</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,837</valorAtencion>
+		<bonificacionIsapre>$20.58</bonificacionIsapre>
+		<bonificacionSeguro>$39.88</bonificacionSeguro>
+		<bonificacionCCAF>$20.17</bonificacionCCAF>
+		<valorCopago>$94.74</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>132</numeroBono>
+		<fechaEmision>2015/12/15</fechaEmision>
+		<rutPaciente>16254152-8</rutPaciente>
+		<nombrePaciente>Cleo Ryan</nombrePaciente>
+		<nombreMedico>Ainsley Pittman</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$7,111</valorAtencion>
+		<bonificacionIsapre>$90.77</bonificacionIsapre>
+		<bonificacionSeguro>$47.57</bonificacionSeguro>
+		<bonificacionCCAF>$13.33</bonificacionCCAF>
+		<valorCopago>$57.89</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>133</numeroBono>
+		<fechaEmision>2015/12/06</fechaEmision>
+		<rutPaciente>25551933-6</rutPaciente>
+		<nombrePaciente>Wendy Mays</nombrePaciente>
+		<nombreMedico>Autumn Dawson</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$2,786</valorAtencion>
+		<bonificacionIsapre>$86.39</bonificacionIsapre>
+		<bonificacionSeguro>$40.71</bonificacionSeguro>
+		<bonificacionCCAF>$37.95</bonificacionCCAF>
+		<valorCopago>$13.52</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>134</numeroBono>
+		<fechaEmision>2015/12/04</fechaEmision>
+		<rutPaciente>13085785-K</rutPaciente>
+		<nombrePaciente>Ursula Gonzalez</nombrePaciente>
+		<nombreMedico>Amena Petty</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$6,031</valorAtencion>
+		<bonificacionIsapre>$96.27</bonificacionIsapre>
+		<bonificacionSeguro>$4.48</bonificacionSeguro>
+		<bonificacionCCAF>$36.68</bonificacionCCAF>
+		<valorCopago>$62.73</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>135</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>44736936-2</rutPaciente>
+		<nombrePaciente>Preston Bright</nombrePaciente>
+		<nombreMedico>Kirby Mullins</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,726</valorAtencion>
+		<bonificacionIsapre>$50.93</bonificacionIsapre>
+		<bonificacionSeguro>$33.09</bonificacionSeguro>
+		<bonificacionCCAF>$15.20</bonificacionCCAF>
+		<valorCopago>$26.47</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>136</numeroBono>
+		<fechaEmision>2016/01/02</fechaEmision>
+		<rutPaciente>38136157-8</rutPaciente>
+		<nombrePaciente>Lareina Boyd</nombrePaciente>
+		<nombreMedico>Teegan Delaney</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$1,867</valorAtencion>
+		<bonificacionIsapre>$30.69</bonificacionIsapre>
+		<bonificacionSeguro>$91.41</bonificacionSeguro>
+		<bonificacionCCAF>$93.22</bonificacionCCAF>
+		<valorCopago>$86.95</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>137</numeroBono>
+		<fechaEmision>2015/12/28</fechaEmision>
+		<rutPaciente>8285555-6</rutPaciente>
+		<nombrePaciente>Anjolie Hale</nombrePaciente>
+		<nombreMedico>Channing Alvarez</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$4,513</valorAtencion>
+		<bonificacionIsapre>$65.20</bonificacionIsapre>
+		<bonificacionSeguro>$23.65</bonificacionSeguro>
+		<bonificacionCCAF>$37.19</bonificacionCCAF>
+		<valorCopago>$62.24</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>138</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>36290313-0</rutPaciente>
+		<nombrePaciente>Madeline Nichols</nombrePaciente>
+		<nombreMedico>Alea Sanford</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$1,927</valorAtencion>
+		<bonificacionIsapre>$66.47</bonificacionIsapre>
+		<bonificacionSeguro>$63.97</bonificacionSeguro>
+		<bonificacionCCAF>$98.79</bonificacionCCAF>
+		<valorCopago>$35.95</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>139</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>14670967-2</rutPaciente>
+		<nombrePaciente>Gary Gould</nombrePaciente>
+		<nombreMedico>Michelle Hancock</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,236</valorAtencion>
+		<bonificacionIsapre>$78.63</bonificacionIsapre>
+		<bonificacionSeguro>$17.97</bonificacionSeguro>
+		<bonificacionCCAF>$95.01</bonificacionCCAF>
+		<valorCopago>$16.68</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>140</numeroBono>
+		<fechaEmision>2015/12/27</fechaEmision>
+		<rutPaciente>5706427-7</rutPaciente>
+		<nombrePaciente>Blair Gallegos</nombrePaciente>
+		<nombreMedico>Gillian Gilliam</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$1,170</valorAtencion>
+		<bonificacionIsapre>$76.24</bonificacionIsapre>
+		<bonificacionSeguro>$86.16</bonificacionSeguro>
+		<bonificacionCCAF>$51.06</bonificacionCCAF>
+		<valorCopago>$0.79</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>141</numeroBono>
+		<fechaEmision>2015/12/28</fechaEmision>
+		<rutPaciente>31806719-8</rutPaciente>
+		<nombrePaciente>Kirestin Howard</nombrePaciente>
+		<nombreMedico>Maxwell Carney</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,680</valorAtencion>
+		<bonificacionIsapre>$33.17</bonificacionIsapre>
+		<bonificacionSeguro>$79.23</bonificacionSeguro>
+		<bonificacionCCAF>$21.38</bonificacionCCAF>
+		<valorCopago>$58.54</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>142</numeroBono>
+		<fechaEmision>2015/12/17</fechaEmision>
+		<rutPaciente>40677605-0</rutPaciente>
+		<nombrePaciente>Harlan Kirby</nombrePaciente>
+		<nombreMedico>Cally Duke</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$6,971</valorAtencion>
+		<bonificacionIsapre>$74.33</bonificacionIsapre>
+		<bonificacionSeguro>$74.83</bonificacionSeguro>
+		<bonificacionCCAF>$0.96</bonificacionCCAF>
+		<valorCopago>$44.82</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>143</numeroBono>
+		<fechaEmision>2015/12/26</fechaEmision>
+		<rutPaciente>20715951-4</rutPaciente>
+		<nombrePaciente>Yoshi Rowe</nombrePaciente>
+		<nombreMedico>Kenyon Mcknight</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,959</valorAtencion>
+		<bonificacionIsapre>$47.39</bonificacionIsapre>
+		<bonificacionSeguro>$58.51</bonificacionSeguro>
+		<bonificacionCCAF>$45.45</bonificacionCCAF>
+		<valorCopago>$14.14</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>144</numeroBono>
+		<fechaEmision>2015/12/10</fechaEmision>
+		<rutPaciente>40038192-5</rutPaciente>
+		<nombrePaciente>Melanie Garcia</nombrePaciente>
+		<nombreMedico>Nash Branch</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$0,474</valorAtencion>
+		<bonificacionIsapre>$49.00</bonificacionIsapre>
+		<bonificacionSeguro>$83.35</bonificacionSeguro>
+		<bonificacionCCAF>$53.17</bonificacionCCAF>
+		<valorCopago>$35.45</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>145</numeroBono>
+		<fechaEmision>2015/12/31</fechaEmision>
+		<rutPaciente>13745868-3</rutPaciente>
+		<nombrePaciente>Rhea Chaney</nombrePaciente>
+		<nombreMedico>Kimberley Goodwin</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,495</valorAtencion>
+		<bonificacionIsapre>$91.89</bonificacionIsapre>
+		<bonificacionSeguro>$16.87</bonificacionSeguro>
+		<bonificacionCCAF>$99.57</bonificacionCCAF>
+		<valorCopago>$5.13</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>146</numeroBono>
+		<fechaEmision>2015/12/11</fechaEmision>
+		<rutPaciente>18345414-5</rutPaciente>
+		<nombrePaciente>Ariana Beasley</nombrePaciente>
+		<nombreMedico>Reuben Snyder</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,564</valorAtencion>
+		<bonificacionIsapre>$0.09</bonificacionIsapre>
+		<bonificacionSeguro>$52.63</bonificacionSeguro>
+		<bonificacionCCAF>$16.80</bonificacionCCAF>
+		<valorCopago>$28.60</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>147</numeroBono>
+		<fechaEmision>2015/12/27</fechaEmision>
+		<rutPaciente>5094854-4</rutPaciente>
+		<nombrePaciente>Maite Dejesus</nombrePaciente>
+		<nombreMedico>Chanda Pope</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$1,499</valorAtencion>
+		<bonificacionIsapre>$78.66</bonificacionIsapre>
+		<bonificacionSeguro>$96.57</bonificacionSeguro>
+		<bonificacionCCAF>$74.90</bonificacionCCAF>
+		<valorCopago>$68.33</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>148</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>21151984-3</rutPaciente>
+		<nombrePaciente>Chaney Malone</nombrePaciente>
+		<nombreMedico>Imogene Dorsey</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,529</valorAtencion>
+		<bonificacionIsapre>$90.85</bonificacionIsapre>
+		<bonificacionSeguro>$8.12</bonificacionSeguro>
+		<bonificacionCCAF>$11.41</bonificacionCCAF>
+		<valorCopago>$67.02</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>149</numeroBono>
+		<fechaEmision>2015/12/31</fechaEmision>
+		<rutPaciente>44172353-9</rutPaciente>
+		<nombrePaciente>Mercedes Harrison</nombrePaciente>
+		<nombreMedico>Tashya Bolton</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$4,686</valorAtencion>
+		<bonificacionIsapre>$16.42</bonificacionIsapre>
+		<bonificacionSeguro>$29.92</bonificacionSeguro>
+		<bonificacionCCAF>$50.34</bonificacionCCAF>
+		<valorCopago>$65.96</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>150</numeroBono>
+		<fechaEmision>2016/01/04</fechaEmision>
+		<rutPaciente>34938206-7</rutPaciente>
+		<nombrePaciente>Kai Schultz</nombrePaciente>
+		<nombreMedico>Beatrice Flowers</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$2,518</valorAtencion>
+		<bonificacionIsapre>$51.69</bonificacionIsapre>
+		<bonificacionSeguro>$32.64</bonificacionSeguro>
+		<bonificacionCCAF>$62.26</bonificacionCCAF>
+		<valorCopago>$40.28</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>151</numeroBono>
+		<fechaEmision>2015/12/02</fechaEmision>
+		<rutPaciente>42458500-9</rutPaciente>
+		<nombrePaciente>Xandra Tate</nombrePaciente>
+		<nombreMedico>Darrel Mclean</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,286</valorAtencion>
+		<bonificacionIsapre>$50.74</bonificacionIsapre>
+		<bonificacionSeguro>$62.20</bonificacionSeguro>
+		<bonificacionCCAF>$78.14</bonificacionCCAF>
+		<valorCopago>$43.31</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>152</numeroBono>
+		<fechaEmision>2016/01/01</fechaEmision>
+		<rutPaciente>42433028-0</rutPaciente>
+		<nombrePaciente>Wade Ochoa</nombrePaciente>
+		<nombreMedico>Giselle Banks</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,028</valorAtencion>
+		<bonificacionIsapre>$11.33</bonificacionIsapre>
+		<bonificacionSeguro>$38.66</bonificacionSeguro>
+		<bonificacionCCAF>$63.86</bonificacionCCAF>
+		<valorCopago>$58.42</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>153</numeroBono>
+		<fechaEmision>2016/01/03</fechaEmision>
+		<rutPaciente>13548520-9</rutPaciente>
+		<nombrePaciente>Gay Kelly</nombrePaciente>
+		<nombreMedico>Addison Dodson</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,804</valorAtencion>
+		<bonificacionIsapre>$21.48</bonificacionIsapre>
+		<bonificacionSeguro>$4.18</bonificacionSeguro>
+		<bonificacionCCAF>$51.91</bonificacionCCAF>
+		<valorCopago>$77.50</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>154</numeroBono>
+		<fechaEmision>2016/01/02</fechaEmision>
+		<rutPaciente>32104779-3</rutPaciente>
+		<nombrePaciente>Rigel Cortez</nombrePaciente>
+		<nombreMedico>Chancellor Porter</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$5,848</valorAtencion>
+		<bonificacionIsapre>$67.36</bonificacionIsapre>
+		<bonificacionSeguro>$15.07</bonificacionSeguro>
+		<bonificacionCCAF>$97.48</bonificacionCCAF>
+		<valorCopago>$37.93</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>155</numeroBono>
+		<fechaEmision>2015/12/03</fechaEmision>
+		<rutPaciente>26274601-1</rutPaciente>
+		<nombrePaciente>Austin Fleming</nombrePaciente>
+		<nombreMedico>Hayes Underwood</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,886</valorAtencion>
+		<bonificacionIsapre>$67.23</bonificacionIsapre>
+		<bonificacionSeguro>$27.02</bonificacionSeguro>
+		<bonificacionCCAF>$5.52</bonificacionCCAF>
+		<valorCopago>$15.35</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>156</numeroBono>
+		<fechaEmision>2015/12/09</fechaEmision>
+		<rutPaciente>15909348-4</rutPaciente>
+		<nombrePaciente>Helen Hooper</nombrePaciente>
+		<nombreMedico>Kay Bowen</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$1,507</valorAtencion>
+		<bonificacionIsapre>$14.02</bonificacionIsapre>
+		<bonificacionSeguro>$53.39</bonificacionSeguro>
+		<bonificacionCCAF>$80.65</bonificacionCCAF>
+		<valorCopago>$84.05</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>157</numeroBono>
+		<fechaEmision>2016/01/04</fechaEmision>
+		<rutPaciente>45384302-5</rutPaciente>
+		<nombrePaciente>Tucker Klein</nombrePaciente>
+		<nombreMedico>Declan Pennington</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$9,955</valorAtencion>
+		<bonificacionIsapre>$89.62</bonificacionIsapre>
+		<bonificacionSeguro>$13.86</bonificacionSeguro>
+		<bonificacionCCAF>$71.86</bonificacionCCAF>
+		<valorCopago>$93.99</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>158</numeroBono>
+		<fechaEmision>2015/12/11</fechaEmision>
+		<rutPaciente>50775450-3</rutPaciente>
+		<nombrePaciente>Calista Kinney</nombrePaciente>
+		<nombreMedico>Hiram Wooten</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,463</valorAtencion>
+		<bonificacionIsapre>$86.42</bonificacionIsapre>
+		<bonificacionSeguro>$90.55</bonificacionSeguro>
+		<bonificacionCCAF>$40.33</bonificacionCCAF>
+		<valorCopago>$20.01</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>159</numeroBono>
+		<fechaEmision>2015/12/04</fechaEmision>
+		<rutPaciente>24262007-0</rutPaciente>
+		<nombrePaciente>Bethany Cross</nombrePaciente>
+		<nombreMedico>Abdul Rush</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$4,243</valorAtencion>
+		<bonificacionIsapre>$90.42</bonificacionIsapre>
+		<bonificacionSeguro>$25.83</bonificacionSeguro>
+		<bonificacionCCAF>$74.05</bonificacionCCAF>
+		<valorCopago>$72.00</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>160</numeroBono>
+		<fechaEmision>2015/12/26</fechaEmision>
+		<rutPaciente>44896987-8</rutPaciente>
+		<nombrePaciente>Sheila Mooney</nombrePaciente>
+		<nombreMedico>Finn Boone</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$1,536</valorAtencion>
+		<bonificacionIsapre>$55.46</bonificacionIsapre>
+		<bonificacionSeguro>$80.69</bonificacionSeguro>
+		<bonificacionCCAF>$86.48</bonificacionCCAF>
+		<valorCopago>$30.18</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>161</numeroBono>
+		<fechaEmision>2015/12/25</fechaEmision>
+		<rutPaciente>22914759-5</rutPaciente>
+		<nombrePaciente>Aphrodite Barrett</nombrePaciente>
+		<nombreMedico>Fuller Drake</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,222</valorAtencion>
+		<bonificacionIsapre>$75.43</bonificacionIsapre>
+		<bonificacionSeguro>$26.91</bonificacionSeguro>
+		<bonificacionCCAF>$42.50</bonificacionCCAF>
+		<valorCopago>$76.30</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>162</numeroBono>
+		<fechaEmision>2015/12/07</fechaEmision>
+		<rutPaciente>46930799-9</rutPaciente>
+		<nombrePaciente>Althea Nolan</nombrePaciente>
+		<nombreMedico>Ciaran Warren</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$4,010</valorAtencion>
+		<bonificacionIsapre>$80.30</bonificacionIsapre>
+		<bonificacionSeguro>$24.32</bonificacionSeguro>
+		<bonificacionCCAF>$13.57</bonificacionCCAF>
+		<valorCopago>$66.08</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>163</numeroBono>
+		<fechaEmision>2015/12/01</fechaEmision>
+		<rutPaciente>6283569-9</rutPaciente>
+		<nombrePaciente>Jane Robinson</nombrePaciente>
+		<nombreMedico>Clinton Medina</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$7,060</valorAtencion>
+		<bonificacionIsapre>$3.72</bonificacionIsapre>
+		<bonificacionSeguro>$48.41</bonificacionSeguro>
+		<bonificacionCCAF>$22.09</bonificacionCCAF>
+		<valorCopago>$77.95</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>164</numeroBono>
+		<fechaEmision>2015/12/01</fechaEmision>
+		<rutPaciente>31389001-5</rutPaciente>
+		<nombrePaciente>Venus King</nombrePaciente>
+		<nombreMedico>Orli Roth</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$2,718</valorAtencion>
+		<bonificacionIsapre>$42.03</bonificacionIsapre>
+		<bonificacionSeguro>$51.94</bonificacionSeguro>
+		<bonificacionCCAF>$59.39</bonificacionCCAF>
+		<valorCopago>$30.41</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>165</numeroBono>
+		<fechaEmision>2015/12/12</fechaEmision>
+		<rutPaciente>30174306-8</rutPaciente>
+		<nombrePaciente>Cheryl Cannon</nombrePaciente>
+		<nombreMedico>Hamilton Barlow</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$5,238</valorAtencion>
+		<bonificacionIsapre>$73.04</bonificacionIsapre>
+		<bonificacionSeguro>$23.14</bonificacionSeguro>
+		<bonificacionCCAF>$23.77</bonificacionCCAF>
+		<valorCopago>$46.93</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>166</numeroBono>
+		<fechaEmision>2015/12/18</fechaEmision>
+		<rutPaciente>41313300-9</rutPaciente>
+		<nombrePaciente>Zephania Mejia</nombrePaciente>
+		<nombreMedico>Macon Mercer</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$8,249</valorAtencion>
+		<bonificacionIsapre>$69.62</bonificacionIsapre>
+		<bonificacionSeguro>$57.68</bonificacionSeguro>
+		<bonificacionCCAF>$18.00</bonificacionCCAF>
+		<valorCopago>$58.33</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>167</numeroBono>
+		<fechaEmision>2015/12/02</fechaEmision>
+		<rutPaciente>35409622-6</rutPaciente>
+		<nombrePaciente>Nissim Bentley</nombrePaciente>
+		<nombreMedico>Emerald Howell</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$0,782</valorAtencion>
+		<bonificacionIsapre>$42.29</bonificacionIsapre>
+		<bonificacionSeguro>$81.10</bonificacionSeguro>
+		<bonificacionCCAF>$70.00</bonificacionCCAF>
+		<valorCopago>$4.90</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>168</numeroBono>
+		<fechaEmision>2015/12/24</fechaEmision>
+		<rutPaciente>25517102-K</rutPaciente>
+		<nombrePaciente>Michael Travis</nombrePaciente>
+		<nombreMedico>Octavius Sellers</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$1,052</valorAtencion>
+		<bonificacionIsapre>$88.10</bonificacionIsapre>
+		<bonificacionSeguro>$15.70</bonificacionSeguro>
+		<bonificacionCCAF>$93.48</bonificacionCCAF>
+		<valorCopago>$82.21</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>169</numeroBono>
+		<fechaEmision>2015/12/13</fechaEmision>
+		<rutPaciente>46271165-4</rutPaciente>
+		<nombrePaciente>Carter Tyson</nombrePaciente>
+		<nombreMedico>Cathleen Wells</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,569</valorAtencion>
+		<bonificacionIsapre>$59.20</bonificacionIsapre>
+		<bonificacionSeguro>$22.32</bonificacionSeguro>
+		<bonificacionCCAF>$51.49</bonificacionCCAF>
+		<valorCopago>$14.54</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>170</numeroBono>
+		<fechaEmision>2015/12/06</fechaEmision>
+		<rutPaciente>42038943-4</rutPaciente>
+		<nombrePaciente>George Francis</nombrePaciente>
+		<nombreMedico>Mary Schneider</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,499</valorAtencion>
+		<bonificacionIsapre>$19.77</bonificacionIsapre>
+		<bonificacionSeguro>$53.86</bonificacionSeguro>
+		<bonificacionCCAF>$21.84</bonificacionCCAF>
+		<valorCopago>$69.16</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>171</numeroBono>
+		<fechaEmision>2015/12/05</fechaEmision>
+		<rutPaciente>37693646-5</rutPaciente>
+		<nombrePaciente>Adam Jimenez</nombrePaciente>
+		<nombreMedico>Kirestin Bray</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$5,406</valorAtencion>
+		<bonificacionIsapre>$70.71</bonificacionIsapre>
+		<bonificacionSeguro>$25.85</bonificacionSeguro>
+		<bonificacionCCAF>$62.04</bonificacionCCAF>
+		<valorCopago>$34.23</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>172</numeroBono>
+		<fechaEmision>2015/12/16</fechaEmision>
+		<rutPaciente>27122500-8</rutPaciente>
+		<nombrePaciente>Dale Riggs</nombrePaciente>
+		<nombreMedico>Garth Rivas</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$9,282</valorAtencion>
+		<bonificacionIsapre>$76.05</bonificacionIsapre>
+		<bonificacionSeguro>$58.54</bonificacionSeguro>
+		<bonificacionCCAF>$68.99</bonificacionCCAF>
+		<valorCopago>$46.31</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>173</numeroBono>
+		<fechaEmision>2015/12/01</fechaEmision>
+		<rutPaciente>46956212-3</rutPaciente>
+		<nombrePaciente>Ezekiel Irwin</nombrePaciente>
+		<nombreMedico>Ethan Randolph</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,492</valorAtencion>
+		<bonificacionIsapre>$7.64</bonificacionIsapre>
+		<bonificacionSeguro>$14.65</bonificacionSeguro>
+		<bonificacionCCAF>$65.86</bonificacionCCAF>
+		<valorCopago>$75.14</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>174</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>5201509-K</rutPaciente>
+		<nombrePaciente>Buckminster Gates</nombrePaciente>
+		<nombreMedico>Hayley Wood</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$8,084</valorAtencion>
+		<bonificacionIsapre>$17.59</bonificacionIsapre>
+		<bonificacionSeguro>$33.51</bonificacionSeguro>
+		<bonificacionCCAF>$80.88</bonificacionCCAF>
+		<valorCopago>$44.38</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>175</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>46988937-8</rutPaciente>
+		<nombrePaciente>Acton Blackburn</nombrePaciente>
+		<nombreMedico>Inga Huffman</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,535</valorAtencion>
+		<bonificacionIsapre>$98.69</bonificacionIsapre>
+		<bonificacionSeguro>$60.82</bonificacionSeguro>
+		<bonificacionCCAF>$45.29</bonificacionCCAF>
+		<valorCopago>$39.56</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>176</numeroBono>
+		<fechaEmision>2015/12/17</fechaEmision>
+		<rutPaciente>47350938-5</rutPaciente>
+		<nombrePaciente>Amelia Randolph</nombrePaciente>
+		<nombreMedico>Kitra Vang</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$7,923</valorAtencion>
+		<bonificacionIsapre>$80.15</bonificacionIsapre>
+		<bonificacionSeguro>$66.88</bonificacionSeguro>
+		<bonificacionCCAF>$25.88</bonificacionCCAF>
+		<valorCopago>$22.08</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>177</numeroBono>
+		<fechaEmision>2016/01/04</fechaEmision>
+		<rutPaciente>7024284-2</rutPaciente>
+		<nombrePaciente>Grace Navarro</nombrePaciente>
+		<nombreMedico>Amos Mathews</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,886</valorAtencion>
+		<bonificacionIsapre>$3.92</bonificacionIsapre>
+		<bonificacionSeguro>$76.42</bonificacionSeguro>
+		<bonificacionCCAF>$26.60</bonificacionCCAF>
+		<valorCopago>$78.06</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>178</numeroBono>
+		<fechaEmision>2016/01/01</fechaEmision>
+		<rutPaciente>38556855-K</rutPaciente>
+		<nombrePaciente>Nathaniel Rice</nombrePaciente>
+		<nombreMedico>Alvin Curtis</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,416</valorAtencion>
+		<bonificacionIsapre>$23.50</bonificacionIsapre>
+		<bonificacionSeguro>$86.42</bonificacionSeguro>
+		<bonificacionCCAF>$94.95</bonificacionCCAF>
+		<valorCopago>$48.81</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>179</numeroBono>
+		<fechaEmision>2015/12/06</fechaEmision>
+		<rutPaciente>35848133-7</rutPaciente>
+		<nombrePaciente>Aristotle Curtis</nombrePaciente>
+		<nombreMedico>Latifah Gallegos</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,396</valorAtencion>
+		<bonificacionIsapre>$2.97</bonificacionIsapre>
+		<bonificacionSeguro>$92.82</bonificacionSeguro>
+		<bonificacionCCAF>$41.72</bonificacionCCAF>
+		<valorCopago>$2.49</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>180</numeroBono>
+		<fechaEmision>2015/12/27</fechaEmision>
+		<rutPaciente>10797200-5</rutPaciente>
+		<nombrePaciente>Ivana Lloyd</nombrePaciente>
+		<nombreMedico>Regina Ayala</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,301</valorAtencion>
+		<bonificacionIsapre>$50.10</bonificacionIsapre>
+		<bonificacionSeguro>$81.44</bonificacionSeguro>
+		<bonificacionCCAF>$57.70</bonificacionCCAF>
+		<valorCopago>$35.60</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>181</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>49456423-8</rutPaciente>
+		<nombrePaciente>Paki Murray</nombrePaciente>
+		<nombreMedico>Willow Burt</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$3,909</valorAtencion>
+		<bonificacionIsapre>$23.66</bonificacionIsapre>
+		<bonificacionSeguro>$18.07</bonificacionSeguro>
+		<bonificacionCCAF>$60.57</bonificacionCCAF>
+		<valorCopago>$21.83</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>182</numeroBono>
+		<fechaEmision>2016/01/02</fechaEmision>
+		<rutPaciente>37417340-5</rutPaciente>
+		<nombrePaciente>Cooper Britt</nombrePaciente>
+		<nombreMedico>David Blankenship</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 2</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$9,446</valorAtencion>
+		<bonificacionIsapre>$75.61</bonificacionIsapre>
+		<bonificacionSeguro>$59.98</bonificacionSeguro>
+		<bonificacionCCAF>$41.82</bonificacionCCAF>
+		<valorCopago>$7.34</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>183</numeroBono>
+		<fechaEmision>2015/12/15</fechaEmision>
+		<rutPaciente>15707828-3</rutPaciente>
+		<nombrePaciente>Erica Fuentes</nombrePaciente>
+		<nombreMedico>Xyla Bartlett</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,338</valorAtencion>
+		<bonificacionIsapre>$62.60</bonificacionIsapre>
+		<bonificacionSeguro>$31.51</bonificacionSeguro>
+		<bonificacionCCAF>$71.81</bonificacionCCAF>
+		<valorCopago>$62.43</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>184</numeroBono>
+		<fechaEmision>2015/12/06</fechaEmision>
+		<rutPaciente>34181345-K</rutPaciente>
+		<nombrePaciente>Gabriel Gamble</nombrePaciente>
+		<nombreMedico>Grace Raymond</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$6,508</valorAtencion>
+		<bonificacionIsapre>$99.64</bonificacionIsapre>
+		<bonificacionSeguro>$16.44</bonificacionSeguro>
+		<bonificacionCCAF>$61.13</bonificacionCCAF>
+		<valorCopago>$50.15</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>185</numeroBono>
+		<fechaEmision>2015/12/03</fechaEmision>
+		<rutPaciente>40349482-8</rutPaciente>
+		<nombrePaciente>Jasmine Landry</nombrePaciente>
+		<nombreMedico>Odette Gray</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,003</valorAtencion>
+		<bonificacionIsapre>$96.73</bonificacionIsapre>
+		<bonificacionSeguro>$9.43</bonificacionSeguro>
+		<bonificacionCCAF>$50.50</bonificacionCCAF>
+		<valorCopago>$9.76</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>186</numeroBono>
+		<fechaEmision>2015/12/19</fechaEmision>
+		<rutPaciente>38341064-9</rutPaciente>
+		<nombrePaciente>Brynn Mann</nombrePaciente>
+		<nombreMedico>Deirdre Strong</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$2,535</valorAtencion>
+		<bonificacionIsapre>$45.32</bonificacionIsapre>
+		<bonificacionSeguro>$50.23</bonificacionSeguro>
+		<bonificacionCCAF>$56.58</bonificacionCCAF>
+		<valorCopago>$66.89</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>187</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>49453872-5</rutPaciente>
+		<nombrePaciente>Samantha Booth</nombrePaciente>
+		<nombreMedico>Sebastian Kerr</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$9,769</valorAtencion>
+		<bonificacionIsapre>$69.96</bonificacionIsapre>
+		<bonificacionSeguro>$74.72</bonificacionSeguro>
+		<bonificacionCCAF>$88.25</bonificacionCCAF>
+		<valorCopago>$83.33</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>188</numeroBono>
+		<fechaEmision>2015/12/12</fechaEmision>
+		<rutPaciente>32006659-K</rutPaciente>
+		<nombrePaciente>Cara Kerr</nombrePaciente>
+		<nombreMedico>Ulysses Wilson</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$6,713</valorAtencion>
+		<bonificacionIsapre>$81.64</bonificacionIsapre>
+		<bonificacionSeguro>$63.78</bonificacionSeguro>
+		<bonificacionCCAF>$24.09</bonificacionCCAF>
+		<valorCopago>$71.90</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>189</numeroBono>
+		<fechaEmision>2015/12/22</fechaEmision>
+		<rutPaciente>25855274-1</rutPaciente>
+		<nombrePaciente>Wing Burns</nombrePaciente>
+		<nombreMedico>Rajah Robinson</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$7,303</valorAtencion>
+		<bonificacionIsapre>$83.83</bonificacionIsapre>
+		<bonificacionSeguro>$56.55</bonificacionSeguro>
+		<bonificacionCCAF>$50.27</bonificacionCCAF>
+		<valorCopago>$36.85</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>190</numeroBono>
+		<fechaEmision>2015/12/14</fechaEmision>
+		<rutPaciente>29141491-5</rutPaciente>
+		<nombrePaciente>Tarik Brennan</nombrePaciente>
+		<nombreMedico>Ferdinand Wheeler</nombreMedico>
+		<isapre>Isapre 2</isapre>
+		<seguro>Seguro 3</seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,162</valorAtencion>
+		<bonificacionIsapre>$78.70</bonificacionIsapre>
+		<bonificacionSeguro>$18.56</bonificacionSeguro>
+		<bonificacionCCAF>$59.05</bonificacionCCAF>
+		<valorCopago>$51.29</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>191</numeroBono>
+		<fechaEmision>2015/12/16</fechaEmision>
+		<rutPaciente>12805713-7</rutPaciente>
+		<nombrePaciente>Lillian Cooper</nombrePaciente>
+		<nombreMedico>Ann Waller</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$3,224</valorAtencion>
+		<bonificacionIsapre>$61.16</bonificacionIsapre>
+		<bonificacionSeguro>$53.55</bonificacionSeguro>
+		<bonificacionCCAF>$10.37</bonificacionCCAF>
+		<valorCopago>$45.62</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>192</numeroBono>
+		<fechaEmision>2015/12/25</fechaEmision>
+		<rutPaciente>48700952-0</rutPaciente>
+		<nombrePaciente>Ayanna Britt</nombrePaciente>
+		<nombreMedico>Henry Cline</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$5,105</valorAtencion>
+		<bonificacionIsapre>$18.05</bonificacionIsapre>
+		<bonificacionSeguro>$28.17</bonificacionSeguro>
+		<bonificacionCCAF>$78.75</bonificacionCCAF>
+		<valorCopago>$83.73</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>193</numeroBono>
+		<fechaEmision>2015/12/05</fechaEmision>
+		<rutPaciente>8717151-5</rutPaciente>
+		<nombrePaciente>Carly Erickson</nombrePaciente>
+		<nombreMedico>Hamilton Mann</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$8,969</valorAtencion>
+		<bonificacionIsapre>$78.02</bonificacionIsapre>
+		<bonificacionSeguro>$11.00</bonificacionSeguro>
+		<bonificacionCCAF>$1.29</bonificacionCCAF>
+		<valorCopago>$97.48</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>194</numeroBono>
+		<fechaEmision>2015/12/30</fechaEmision>
+		<rutPaciente>29261645-7</rutPaciente>
+		<nombrePaciente>Jerry Strickland</nombrePaciente>
+		<nombreMedico>Quin Ochoa</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$8,911</valorAtencion>
+		<bonificacionIsapre>$61.90</bonificacionIsapre>
+		<bonificacionSeguro>$65.66</bonificacionSeguro>
+		<bonificacionCCAF>$58.09</bonificacionCCAF>
+		<valorCopago>$67.17</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>195</numeroBono>
+		<fechaEmision>2015/12/05</fechaEmision>
+		<rutPaciente>10142380-8</rutPaciente>
+		<nombrePaciente>Rhea King</nombrePaciente>
+		<nombreMedico>Yoshio Raymond</nombreMedico>
+		<isapre></isapre>
+		<seguro>Seguro 1</seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$9,904</valorAtencion>
+		<bonificacionIsapre>$42.89</bonificacionIsapre>
+		<bonificacionSeguro>$5.75</bonificacionSeguro>
+		<bonificacionCCAF>$54.93</bonificacionCCAF>
+		<valorCopago>$20.78</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>196</numeroBono>
+		<fechaEmision>2015/12/28</fechaEmision>
+		<rutPaciente>22654788-6</rutPaciente>
+		<nombrePaciente>Cally Gates</nombrePaciente>
+		<nombreMedico>Noah Gentry</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$7,810</valorAtencion>
+		<bonificacionIsapre>$71.32</bonificacionIsapre>
+		<bonificacionSeguro>$59.42</bonificacionSeguro>
+		<bonificacionCCAF>$38.37</bonificacionCCAF>
+		<valorCopago>$41.87</valorCopago>
+	</record>
+	<record>
+		<tipo>PARTICULAR</tipo>
+		<numeroBono>197</numeroBono>
+		<fechaEmision>2015/12/31</fechaEmision>
+		<rutPaciente>32289799-5</rutPaciente>
+		<nombrePaciente>Cairo Chase</nombrePaciente>
+		<nombreMedico>Aurelia Porter</nombreMedico>
+		<isapre>Isapre 1</isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$4,870</valorAtencion>
+		<bonificacionIsapre>$72.07</bonificacionIsapre>
+		<bonificacionSeguro>$50.67</bonificacionSeguro>
+		<bonificacionCCAF>$55.01</bonificacionCCAF>
+		<valorCopago>$92.75</valorCopago>
+	</record>
+	<record>
+		<tipo>ONLINE</tipo>
+		<numeroBono>198</numeroBono>
+		<fechaEmision>2015/12/23</fechaEmision>
+		<rutPaciente>15222267-K</rutPaciente>
+		<nombrePaciente>Cyrus Hancock</nombrePaciente>
+		<nombreMedico>Raven Miles</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf>ccaf 1</ccaf>
+		<valorAtencion>$8,780</valorAtencion>
+		<bonificacionIsapre>$15.68</bonificacionIsapre>
+		<bonificacionSeguro>$79.25</bonificacionSeguro>
+		<bonificacionCCAF>$75.53</bonificacionCCAF>
+		<valorCopago>$86.23</valorCopago>
+	</record>
+	<record>
+		<tipo>OFFLINE</tipo>
+		<numeroBono>199</numeroBono>
+		<fechaEmision>2015/12/18</fechaEmision>
+		<rutPaciente>45090014-1</rutPaciente>
+		<nombrePaciente>Quinlan Mcfarland</nombrePaciente>
+		<nombreMedico>Justine Christensen</nombreMedico>
+		<isapre></isapre>
+		<seguro></seguro>
+		<ccaf></ccaf>
+		<valorAtencion>$6,685</valorAtencion>
+		<bonificacionIsapre>$23.21</bonificacionIsapre>
+		<bonificacionSeguro>$47.08</bonificacionSeguro>
+		<bonificacionCCAF>$46.51</bonificacionCCAF>
+		<valorCopago>$31.44</valorCopago>
+	</record>
+</records>

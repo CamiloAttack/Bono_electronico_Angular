@@ -1,0 +1,32 @@
+<boton-usuario></boton-usuario>
+<div class="huella"></div>
+<div class="container-fluid bg-greyb log-log altoA lin-bla">
+    <div class="row center-blockb width">
+        <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+        </div>
+    </div>
+    <div>&nbsp;</div>
+    <div class="row center-block">
+        <a ui-sref="tocpaciente({nombreOpcion:'ram'})">
+            <button class="ama-nar btn-pri reg">
+            <div>registro de<br>atención</div>
+            </button>
+        </a>
+        <a ui-sref="simulacion">
+            <button class="ama-nar btn-pri sim">
+            <div>simular<br>&nbsp;</div>
+            </button>
+        </a>
+        <a ui-sref="consultaDeVenta">
+            <button class="ama-nar btn-pri con">
+            <div>consulta<br>de ventas</div>
+            </button>
+        </a>
+        <a ui-sref="cerrarCaja">
+            <button class="ama-nar btn-pri cer" ng-click="vm.servicioMilliways.consultaDatosCierreCaja()">
+            <div>cerrar caja<br>&nbsp;</div>
+            </button>
+        </a>
+    </div>

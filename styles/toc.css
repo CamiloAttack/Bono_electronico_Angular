@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #TOC
+\*------------------------------------*/
+
+/**
+ * Comment
+ */
+
+.app-toc {
+  position: absolute;
+  z-index: 0;
+  top: auto;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  width: 150px;
+  height: 0;
+  margin: auto;
+}
+
+.app-toc > applet {
+  margin-top: -110px;
+  margin-left: -560px;
+}
+
+.disable /*disab*/
+{
+  width: 100%;
+  color: #333333;
+  border: none;
+  background: none;
+}

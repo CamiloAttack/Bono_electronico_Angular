@@ -1,0 +1,248 @@
+<!--HEADER-->
+<div style="display: none">
+  <span id="idAtencion"></span><span id="idFolio" ></span>
+</div>
+ 
+<header>
+  <!--LOGO FILA BLANCA-->
+  <div class="container-fluid" id="header">
+    <div class="main row">
+      <div class="col-xs-3 col-sm-3 col-me-3">
+        <div class="width">
+          <!--LOGO CENTRO-->
+          <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+          </div>
+          <!--FIN LOGO CENTRO-->
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-9 col-me-9 b">
+            <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" ng-click="vm.btnCancelarTransaccion()">
+        <div>
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+             Cancelar Consulta de Ventas
+        </div>
+      </button>
+            <!--BOTON USUARIO-->
+            <boton-usuario></boton-usuario>
+            <!--FIN BOTON USUARIO-->
+        </div>
+    </div>
+  </div>
+  <!--FIN LOGO-->
+  <!--FORMULARIO DE TITULAR FILA GRIS-->
+
+  <div id="formularioInicial" class="container-columna-header-grilla" >
+       <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+             <div>RANGO DE FECHAS</div>
+             <div><input class="form-control" date-range-picker ng-model="vm.fecha" options="vm.opts" type="text" id="searchfecha"></div>
+         </div>
+         <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+          <div>ENTIDADES</div>
+             <div><input class="form-control" placeholder="ISAPRE" id="searchisapre"></div>
+             <div class="titulo-columnas"></div>
+             <div><input class="form-control" placeholder="SEGUROS" id="searchseguros"></div>
+         </div>
+         <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+          <div>DETALLE DE ATENCION</div>
+            <div>
+              <input class="form-control" placeholder="# BONO" id="searchbono">
+            </div>
+            <div class="titulo-columnas"></div>
+            <div>
+          <input class="form-control" placeholder="# ATENCION" id="searchtipo">
+          </div>
+         
+         </div>
+         <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-6">
+          <div class="col-xs-12 col-sm-12 col-me-12">CONFIGURACION DE VIZUALIZACION</div>
+            <div class="col-xs-12 col-sm-12 col-me-12">
+              <div class="col-xs-6 col-sm-6 col-md-3 cero">
+              <div>
+                  <input class="check_input" id="filtro1" name="filtro1" ng-click="vm.showAndHide(4,vm.checkboxModel.value4)" ng-model="vm.checkboxModel.value4" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro1">
+                    <span class="check_span">Tipo</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro2" name="filtro2" ng-click="vm.showAndHide(5,vm.checkboxModel.value5)" ng-model="vm.checkboxModel.value5" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro2">
+                    <span>Número de Bono</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro3" name="filtro3" ng-click="vm.showAndHide(6,vm.checkboxModel.value6)" ng-model="vm.checkboxModel.value6" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro3">
+                    <span>Número de Atención</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro4" name="filtro4" ng-click="vm.showAndHide(7,vm.checkboxModel.value7)" ng-model="vm.checkboxModel.value7" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro4">
+                    <span>Fecha de Emisión</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 cero">
+                <div>
+                  <input class="check_input" id="filtro5" name="filtro5" ng-click="vm.showAndHide(8,vm.checkboxModel.value8)" ng-model="vm.checkboxModel.value8" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro5">
+                    <span>RUT Paciente</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro6" name="filtro6" ng-click="vm.showAndHide(9,vm.checkboxModel.value9)" ng-model="vm.checkboxModel.value9" type="checkbox" checked="checked" />
+                  <label class="check_label" for="filtro6">
+                    <span>Nombre Paciente</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro7" name="filtro7" ng-click="vm.showAndHide(10,vm.checkboxModel.value10)" ng-model="vm.checkboxModel.value10" type="checkbox"/>
+                  <label class="check_label" for="filtro7">
+                    <span>Rut Medico Tratante</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro8" name="filtro8" ng-click="vm.showAndHide(11,vm.checkboxModel.value11)" ng-model="vm.checkboxModel.value11" type="checkbox"/>
+                  <label  class="check_label" for="filtro8">
+                    <span>Medico Tratante</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 cero">
+                <div>
+                  <input class="check_input"  id="filtro9" name="filtro9" ng-click="vm.showAndHide(12,vm.checkboxModel.value12)" ng-model="vm.checkboxModel.value12" type="checkbox"/>
+                  <label class="check_label" for="filtro9">
+                    <span>Isapre</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro10" name="filtro10" ng-click="vm.showAndHide(13,vm.checkboxModel.value13)" ng-model="vm.checkboxModel.value13" type="checkbox"/>
+                  <label class="check_label" for="filtro10">
+                    <span>Bonificación Isapre</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input"  id="filtro11" name="filtro11" ng-click="vm.showAndHide(14,vm.checkboxModel.value14)" ng-model="vm.checkboxModel.value14" type="checkbox"/>
+                  <label class="check_label" for="filtro11">
+                    <span>Compañia de Seguro</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input"  id="filtro12" name="filtro12" ng-click="vm.showAndHide(15,vm.checkboxModel.value15)" ng-model="vm.checkboxModel.value15" type="checkbox"/>
+                  <label class="check_label" for="filtro12">
+                    <span>Bonificación Seguro</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 cero">
+                <div>
+                  <input class="check_input" id="filtro13" name="filtro13" ng-click="vm.showAndHide(16,vm.checkboxModel.value16)" ng-model="vm.checkboxModel.value16" type="checkbox"/>
+                  <label class="check_label" for="filtro13">
+                    <span>CCAF</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro14" name="filtro14" ng-click="vm.showAndHide(17,vm.checkboxModel.value17)" ng-model="vm.checkboxModel.value17" type="checkbox"/>
+                  <label class="check_label" for="filtro14">
+                    <span>Bonificacion CCAF</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro15" name="filtro15" ng-click="vm.showAndHide(18,vm.checkboxModel.value18)" ng-model="vm.checkboxModel.value18" type="checkbox"/>
+                  <label class="check_label" for="filtro15">
+                    <span>Valor de Atención</span>
+                  </label>
+                </div>
+                <div>
+                  <input class="check_input" id="filtro16" name="filtro16" ng-click="vm.showAndHide(19,vm.checkboxModel.value19)" ng-model="vm.checkboxModel.value19" type="checkbox"/>
+                  <label class="check_label" for="filtro16">
+                    <span>Monto Copago</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+         </div>
+    </div>
+
+  <!--FIN HEADER-->
+</header>
+<!--CONTENEDOR-->
+<div class="container-fluid table-responsive pad-bus altocontenedor ng-scope" id="table-responsive-consulta-venta"> 
+
+    <table class="col-xs-12 col-sm-12 col-me-12 table table-striped table-bordered hover CDV-T " datatable="ng" dt-columns="vm.dtColumnDefs" dt-options="vm.dtOptions" dt-instance="vm.dtInstance" id="CDV-T" width="100%">
+
+   <thead>
+      <tr class="tope text-center " style="background-color:#999 ;padding:9px 18px 20px">
+
+        <th class="sorting"></th>
+        <th class="sorting"></th>       
+        <th class="sorting">SUCURSAL</th>
+        <th class="sorting">LUGAR DE ATENCION</th>
+        <th class="sorting">TIPO</th>
+        <th class="sorting">BONO</th>
+        <th class="sorting">ATENCION</th>
+        <th class="sorting">FECHA DE EMISION</th>
+        <th class="sorting">RUT PACIENTE</th>
+        <th class="sorting">NOMBRE PACIENTE</th>        
+        <th class="sorting">RUT MEDICO TRATANTE</th>
+        <th class="sorting">MEDICO TRATANTE</th>
+        <th class="sorting">ISAPRE</th>
+        <th class="sorting">BON. ISAPRE</th>
+        <th class="sorting">COMPAÑIA DE SEGURO</th>
+        <th class="sorting">BON. SEGURO</th>
+        <th class="sorting">CCAF</th>
+        <th class="sorting">BON. CCAF</th>
+        <th class="sorting">COSTO DE ATENCION</th>
+        <th class="sorting">MONTO COPAGO</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="record in vm.records" role="row" class="clickRowModalDetalle">
+
+        <td class="sorting_desc" id="id_{{ record.idAtencion}}" >{{ record.idAtencion}}</td>
+        <td > 
+        	<button type="button" id="id_anular_{{ record.idAtencion}}" ng-disabled="{{record.disabled}}" data="{{ record.idAtencion }},{{ record.numeroBono }}" ng-click="vm.openModalAnular(record.idAtencion,record.numeroBono);" class="{{ record.valor_clase}} btn ">{{ record.disabled ? 'Anulada' : 'Anular&nbsp;' }}</button>
+     	</td>  
+
+        <td >{{ record.nombreSucursal }}</td>        
+
+        <td >{{ record.nombreLugaratencion }}</td>
+
+        <td >  {{record.nombreTipoAtencion == 'ONLINE' ? 'BONIFICADA' : record.nombreTipoAtencion}}</td>
+
+        <td >{{ record.numeroBono}}</td>
+
+        <td >{{ record.tipoAtencionId}}</td>
+
+        <td class="cdv-t-m text-center sorting_1">{{ record.fecha_bono_unix  * 1000 | date:'yyyy-MM-dd' }}</td>
+        <td class="cdv-t-m sorting_1">{{ record.rutBeneficiario }}</td>
+
+        <td class="cdv-t-l sorting_1" >{{ record.nombreBeneficiario }} </td>
+
+
+        <td class="cdv-t-m sorting_1">{{ record.rutMedico }}</td>
+        <td class="cdv-t-l sorting_1">{{ record.nombreMedico}}</td>
+
+        <td class="cdv-t-l text-center sorting_1">{{ record.isapre }}</td>
+        <td class="cdv-t-m sorting_1">{{ record.montoIsapres }}</td>
+
+        <td class="cdv-t-l text-center sorting_1">{{ record.seguro }}</td>
+        <td class="cdv-t-m sorting_1">{{ record.montoSeguro }}</td>
+
+        <td class="cdv-t-l text-center sorting_1">{{ record.caja }}</td>
+        <td class="cdv-t-m sorting_1">{{ record.montoCaja }}</td>
+
+        <td class="cdv-t-m sorting_1">{{ record.totalPresta }}</td>
+        <td class="cdv-t-m sorting_1">{{ record.copago }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+    <div class="exportar2"><div class="dt-buttons"><a class="dt-button buttons-excel buttons-html5 exe" tabindex="0" aria-controls="CDV-T" ng-click="vm.download('csv file.csv', 'text/csv')"><span> </span></a></div></div>
+
+ 
+ </div> 
+ 

@@ -1,0 +1,68 @@
+<header>
+    <div id="header" class="">
+        <div class="col-xs-12 col-sm-12 col-me-12">
+            
+            <div class="main row">
+                <div class="col-xs-12 col-sm-3 col-me-3">
+                    <div class="width">
+                        <div class="row">
+                            <div class="logo"></div>
+                            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-me-9 b">
+                    <button class="ama-nar btn-sec ver-ver not-gri" id="btn_modo_online"  ng-hide="vm.tipoAtencion === 'PARTICULAR'">
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                        &nbsp;ATENCION EN MODO {{vm.tipoAtencion}}
+                    </div>
+                    </button>
+                    <button id="btnStandby" class="ama-nar btn-sec ama-nar not-gri" ng-hide="vm.tipoAtencion !== 'OFFLINE' || vm.state ==='simulacion'">
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                        &nbsp;ATENCION EN MODO STANDBY
+                    </div>
+                    </button>
+                    <button id="btnParticular" class="ama-nar btn-sec ver-ver not-gri" ng-hide="vm.tipoAtencion !== 'PARTICULAR' || vm.state === 'simulacion'">
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                    &nbsp;ATENCION PARTICULAR</div>
+                    </button>
+                    <button id="btnParticular2" ng-hide="vm.tipoAtencion == 'PARTICULAR' || vm.state === 'simulacion'" class="ama-nar btn-sec eli" ng-click="vm.btnParticular()">
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                    Atencion Particular</div>
+                    </button>
+                    <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" ng-click="vm.btnCancelarTransaccion()">
+                    <div>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        Cancelar Registro de Atencion
+                    </div>
+                    </button>
+                    <boton-usuario></boton-usuario>
+                </div>
+            </div>
+            <div ui-view="formBeneficiario"></div>
+        </div>
+    </div>
+</div>
+<div ui-view="botones" class="row"></div>
+</header>
+<div ui-view="content" ></div>
+<div class="col-xs-12 col-sm-12 co6-me-12 ng-scope">
+<button class="btn btn-warning" ng-click="vm.servicioMilliways.valorizarPrestaciones()" ng-hide="vm.tipoAtencion != 'ONLINE' ||  vm.atencion._id  || vm.state !=='simulacion'" type="button">
+VALORIZAR
+<span Error: source does not appear to be markup.="glyphicon glyphicon-ok" aria-hidden="true"></span>
+</button>
+<button class="btn ver-ver" ng-click="vm.valorizarPrestacionesRam()" id="id_btn_valorizar_online"  ng-show="
+vm.atencion.datosPrestaciones" type="button" style="display:none">
+VALORIZAR
+<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+</button>
+<button class="btn ver-ver" ng-click="vm.pagar()" disabled="" id="id_btn_pagar_online"  type="button">
+PAGAR
+<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+</button>
+<button ng-click="vm.confirmarPago()" class="btn ver-ver" ng-disabled="vm.totalPendiente() != 0" type="button" id="gen_com">GENERAR COMPROBANTE<span aria-hidden="true" class="glyphicon glyphicon-ok"></span></button>
+</div>

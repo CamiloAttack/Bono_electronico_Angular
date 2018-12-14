@@ -1,0 +1,97 @@
+<header>
+  <div class="container-fluid" id="header">
+    <div class="main row">
+      <div class="col-xs-3 col-sm-3 col-me-3">
+        <div class="width">
+          <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-me-9 b">
+        <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" ui-sref="menu" href="#/menuo">
+        <div>
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          Cancelar Cierre Caja
+        </div>
+        </button>
+        <boton-usuario></boton-usuario>
+      </div>
+    </div>
+  </div>
+  <div  class="container-columna-header-grilla" >
+    <div class="columna-header-grilla col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-me-12 ico_nom_financiador">
+        <div class="ico_seg"></div>
+        <span id="financiador">{{ vm.servicioLocal.datosSesion.lugarAtencionNombre }} / {{ vm.servicioLocal.datosSesion.nombreSucursal }}</span>
+      </div>
+      <div>&nbsp;</div>
+      <div class="detalle">FECHA</div>
+        <div class="numeros"> {{ vm.fecha_actual }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">ATENCIONES</div>
+      <div class="numeros"> {{ vm.servicioLocal.cantidadAtenciones }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">FONDO INICIAL</div>
+      <div id="inicial" class="numeros">{{ vm.servicioLocal.montoAperturaCaja }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">MONTO REGISTRADO</div>
+      <div id="total_monto_recaudado_head" class="numeros">{{vm.servicioLocal.montoRecaudado}}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-3">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">DIFERENCIA</div>
+      <div id="total_diferencia_head" class="numeros">{{vm.servicioLocal.totalMontoDiferencia}}</div>
+    </div>
+  </div>
+</header>
+<div class="container-fluid table-responsive pad-bus altocontenedor">
+  <table  class="col-xs-12 col-sm-12 col-me-12 CDV-T " id="tabla_cierre_caja" >
+    <thead >
+      <tr class="tope text-center theadTrTablaGrillas" >
+        <th class="">MEDIOS DE PAGO</th>
+        <th id="" class="text-center">MONTOS</th>
+        <th class="text-right">MONTO RECAUDADO</th>
+        <th class="text-center">DIFERENCIA</th>
+        <th class="text-center">CANT.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="caja in vm.servicioLocal.datosDetalleCaja  track by $index"  role="row" ng-click="vm.activaBotonDetalleMedioPago(caja.idTipoPago);" id="id_tr_{{caja.idTipoPago}}"  data-idPago="{{caja.idTipoPago}}">
+        
+        <td >{{caja.nomTipoPago}}</td>
+        <td class="text-center montos" id="id_{{$index}}_monto_ws" ><!--{caja.totalMonto  || 0 | currency:"$":0 }}-->{{caja.totalMonto}}</td>
+        <td>
+          <div class="input-group medio_pago_recacudado">
+            <input type="text" placeholder="0,00" title="Indique Monto Recaudado" ng-click="vm.eliminaCeros($index);" ng-blur="vm.agregaCeros($index)" class="form-control text-right monto_recaudado" id="id_{{$index}}_monto_recaudado" ng-model="vm.servicioLocal.montosRegistrados[$index]" ng-change="vm.calculaMontoPorMedioPago($index);" value="">
+            <span class="input-group-addon" id="id_btn_validacion_{{$index}}" >
+              <span aria-hidden="true" class="glyphicon glyphicon-ok"  ></span>
+            </span>
+          </div>
+        </td>
+        <td class="text-center diferencia" id="id_{{$index}}_diferencia">0</td>
+        <td class="text-center cantidad" id="id_{{$index}}_cantidad">{{caja.cantidadPagos}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    <tr class="tope text-center tfootTrTablaGrillas">
+      <th class="text-center">TOTAL VENTAS</th>
+      <th id="total_monto_footer" class="text-center"></th>
+      <th id="total_monto_recaudado_footer" class="text-right" ></th>
+      <th id="total_diferencia_footer" class="text-center">0</th>
+      <th id="total_cantidad_footer" class="text-center"></th>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+<div class="panel-footer">
+  <button id="bdetalle" type="submit" class="btn gri-gri" disabled="disabled" ng-click="vm.verDetalleMedioPago();">DETALLE POR MEDIO DE PAGO</button>
+  <button id="btn_cuadrar_caja" type="submit" class="btn gri-gri" disabled="disabled" ng-click="vm.cuadrarCaja();">CERRAR CAJA</button>
+</div>

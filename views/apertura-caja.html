@@ -1,0 +1,39 @@
+<div class="container-fluid bg-greyb log-log altoA lin-bla">
+    <div class="row center-blockb width">
+        <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+        </div>
+    </div>
+    <div class="row center-block--c">
+        <form novalidate class="form-horizontal" name="cajaForm" ng-submit="vm.abrirCaja()" novalidate>
+            <div class="text-muted">
+                <div class="col-xs-8 col-sm-8 col-me-8">
+                    <div class="form-group" ng-class="{ 'has-error' : cajaForm.monto.$error.required && !cajaForm.monto.$pristine }">
+                        <label for="monto" class="control-label">Monto Apertura</label>
+                        <input type="text"  style="color:#fff" value="42353534" class="form-control" id="monto" name="monto" placeholder="123.456.789" ng-model="vm.montoApertura"
+                        required ng-currency  fraction="0"  min="0" ng-required="true" value=""  ng-change="vm.inputVacioChange()"   ng-click="vm.inputVacioClick()">
+                        <span ng-show="cajaForm.monto.$error.required && !cajaForm.monto.$pristine" class="help-block">
+                        El monto de apertura es requerido.</span>
+                    </div>
+                    Fecha de Apertura:<br>
+                    <span>{{vm.fechaAperturaCaja}}</span>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-me-4">
+                    <button  class=" ama-nar btn-pri cer" type="submit" ng-disabled="cajaForm.$invalid">
+                    <div>Abrir Caja</div>
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-me-12">
+                    <div>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    {{vm.datosSesion.usuarioNombreCompleto}}</div>
+                    <div>
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        {{vm.datosSesion.lugarAtencionNombre}},
+                    {{vm.datosSesion.susursalNombre}}</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

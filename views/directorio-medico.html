@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>MEDIPASS</title>
+    <meta name="viewport" content="width=device-width. user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/dir.css">
+  </head>
+  <body onLoad="drawTableConsul(consultaProfesionales)">
+    <div id='notas' class='bas_notas gri-gri' style="display:none;"></div>
+    <header>
+      <div id="header" class="container-fluid" >
+        <div class="main row">
+          <div class="col-xs-3 col-sm-3 col-me-3">
+            <div class="width">
+              <div class="row">
+                <div class="logo"></div>
+                <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-9 col-sm-9 col-me-9 b">
+            <a href="../ram/fuente/log.php">
+              <button id="cancelarTransaccion" class="ama-nar btn-sec eli" onClick="cancelarTransaccion()">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> SALIR DE DIRECTORIO MEDICO
+              </button>
+            </a>
+            <div id="botonusuario" class="dis">
+              <button class="ama-nar btn-sec use">&nbsp;</button>
+              <div class="menu">
+                <div><span id="usuarioRegistrado" class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                <div><span id="prestadorRegistrado" class="glyphicon glyphicon-home" aria-hidden="true"></span></div>
+                <button onClick="cerraSecion()"><span id="cerraSecion" class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formularioInicial" class="ubi container-fluid" >
+        <div class="row pad-sup">
+          <div class="col-xs-11 col-sm-11 col-me-6 disp">
+            <div class="ico_seg"></div>
+            <span id="financiador">Lugar de Atencion / Sucursal / Prestador</span>          </div>
+            <div class="col-xs-1 col-sm-1 col-me-6"></div>
+          </div>
+          <div class="row pad-sup">
+            <div class="col-xs-12 col-sm-6 col-me-6 pad-for-bo">
+              <div class="col-xs-12 col-sm-4 colo-me-4 pad-for pad-for-r">
+                <div>LOCALIZACION</div>
+                <div class="pad-sup pad-for-l"><select class="form-control select" title="Indica la Sucursal">
+                  <option value='0'>SUCURSAL</option>
+                </select></div>
+                <div class="pad-sup pad-for-l"><select class="form-control select" title="Indica el Lugar de Atención del Medico">
+                  <option value='0'>LUGAR DE ATENCION</option>
+                </select></div>
+              </div>
+              <div class="col-xs-12 col-sm-4 colo-me-4 pad-for-r pad-for-l">
+                <div>PROFESIONAL</div>
+                <div class="pad-sup"><input id="" class="form-control"  placeholder="NOMBRE" title="Indica el Nombre del Medico"></div>
+                <div class="pad-sup"><input id="" class="form-control"  placeholder="RUT" title="Indica el RUT del Medico"></div>
+              </div>
+              <div class="col-xs-12 col-sm-4 colo-me-4 pad-for-r pad-for-l">
+                <div>CONVENIO</div>
+                <div class="pad-sup"><input id="" class="form-control"  placeholder="ISAPRE EN CONVENIO" title="Indica el Convenio del Medico"></div>
+                <div class="pad-sup"><input id="" class="form-control"  placeholder="NUMERO DE CONVENIO" title="Indica el numero de Convenio"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-me-6 "></div>
+          </div>
+        </div>
+      </header>
+      <div id="consulta" class="container-fluid table-responsive pad-bus altocontenedor" style="display:none">
+        <table id="CON-T" class="col-xs-12 col-sm-12 col-me-12 CDV-T" >
+          <thead>
+            <tr class="tope text-center">
+              <th class="text-center">NOMBRE DE PROFESIONAL</th>
+              <th class="text-center">RUT PROFESIONAL</th>
+              <th class="text-center">SUCURSAL</th>
+              <th class="text-center">CONVENIOS</th>
+              <th class="text-center">E-MAIL</th>
+              <th class="text-center">TELEFONO</th>
+              <th class="text-center">ESATDO</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div class="exportar">
+        <div class="exe" title="Exportar a EXCEL"></div>
+        <div class="pdf" title="Exportar a PDF"></div>
+      </div>
+    </body>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/numeral.js"></script>
+    <script src="js/dir.js"></script>
+  </html>

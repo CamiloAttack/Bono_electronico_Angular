@@ -1,0 +1,62 @@
+
+transaccion = {
+    id: guid(),
+    fecha: moment().toJSON(),
+    datosUsuario: {
+      rut: rutUsuario,
+      nombre: nombreUsuario,
+      apellido: apellidoUsuario,
+      equipo: equipo
+      }
+    datosPrestador: {
+        id: 1,
+        nombre: "Prestador Prueba",
+        razonSocial: {
+          id: 1,
+          rut: "123.456.789-7",
+          nombre: "nombre Razon Social",
+          nombreFantasia: "nombreFantasia",
+          direccion: "direccion"
+        }
+        datosSucursal: {
+          id: 1,
+          nombre:  "Sucursal Prueba",
+          tipoRecargo: TipoRegarga,
+          recargo: Recarga,
+          desdeRecargo: "00:00",
+          hastaRecargo: "05:00"
+        },
+        datosLugarAtencion : {
+          id: 1,
+          rut: "123.456.789-7",
+          nombre: "Lugar Atencion Demo"
+        }
+    },
+    datosToc: {},
+    datosProceso: {
+        estado: "PROCESADO",
+        estadoAnterior: "ENPROCESO",
+        fechaModificacionEstado: "",
+        bonoAtencion: "0001",
+        convenio: "convenio prueba",
+        grupo: "grupo prueba"
+    },
+    datosTitular: {},
+    datosBeneficiario: {},
+    datosIsapres: {},
+    datosSeguros: [],
+    prestaciones: [],
+    totales: {
+        totalPrestaciones: 0,
+        bonificacionTotalIsapre: 0,
+        bonificacionParcialSeguro: [],
+        bonificacionTotalSeguro: 0,
+        bonificacionTotalCaja: 0
+    },
+    detallePago: {
+        exedenteMostrado: 0,
+        detalleFormasPago: [{},]
+    },
+    bonos: [],
+    errores: []
+};

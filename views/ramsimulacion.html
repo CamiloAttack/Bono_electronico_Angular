@@ -1,0 +1,65 @@
+<header>
+    <div id="header" class="">
+        <div class="col-xs-12 col-sm-12 col-me-12">
+            
+            <div class="main row">
+                <div class="col-xs-12 col-sm-3 col-me-3">
+                    <div class="width">
+                        <div class="row">
+                            <div class="logo"></div>
+                            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-me-9 b">
+                    <button class="ama-nar btn-sec ama-nar not-gri" >
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                        &nbsp;ATENCION EN MODO {{vm.tipoAtencion}}
+                    </div>
+                    </button>
+                    <button id="btnStandby" class="ama-nar btn-sec ama-nar not-gri" ng-hide="vm.tipoAtencion !== 'OFFLINE' || vm.state ==='simulacion'">
+                    <div>
+                        <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                        &nbsp;ATENCION EN MODO STANDBY
+                    </div>
+                    </button>
+                    <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" ng-click="vm.btnCancelarTransaccion()">
+                    <div>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        Cancelar Simulacion
+                    </div>
+                    </button>
+                    <boton-usuario></boton-usuario>
+                </div>
+            </div>
+            <div ui-view="formBeneficiario"></div>
+        </div>
+    </div>
+</div>
+<div ui-view="botones" class="row"></div>
+</header>
+<div ui-view="content" ></div>
+<div class="col-xs-12 col-sm-12 co6-me-12 ng-scope">
+<button class="btn ver-ver" ng-click="vm.servicioMilliways.valorizarPrestaciones()" id="id_btn_valorizar_online"  ng-show="
+vm.atencion.datosPrestaciones" type="button" disabled="" style="display:none">
+SIMULAR
+<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+</button>
+<button class="btn ver-ver" ng-click="vm.pagar()" disabled="" id="id_btn_pagar_online"  type="button"  style="display:none">
+IMPRIMIR
+<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+</button>
+<button ng-click="vm.confirmarPago()" class="btn ver-ver" ng-disabled="vm.totalPendiente() != 0" type="button" id="gen_com"  style="display:none">GENERAR COMPROBANTE<span aria-hidden="true" class="glyphicon glyphicon-ok"></span></button>
+</div>
+<div class="modal fade" id="modal_mensajes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="alerta ama-nar" id="alerta_mensajes">MENSAJE MEDIPASS
+    <button type="button" class="close glyphicon glyphicon-remove form-control-feedback eliminar" data-dismiss="modal" id="close-modal" aria-label="Close"></button>
+    <div id="cantidad_lotes_modal">
+        
+        <div class="contenido_mensaje" id="contenido_mensaje">
+        </div>
+    </div>
+    <button  class='btn gri-gri' type='submit' ng-click='vm.btnParticular()'>Atencion Particular</button>
+</div>
+</div>

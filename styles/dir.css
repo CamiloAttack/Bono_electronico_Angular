@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+.altocontenedor{
+max-height:450px;
+}
+
+
+.numeros{
+font-size:26px;
+padding:0px;
+margin-top:-5px;
+}
+
+.detalle{
+font-size:12px;
+color:#CCCCCC;
+}
+
+.recacudado{
+float:right;
+width:200px;
+}
+
+td  {
+height:45px;
+ padding:5px;
+}
+
+.pad-for-l {
+    padding-left: 4px;
+}
+.pad-for-r {
+    padding-right: 0px;
+}
+
+.pad-for-bo {
+    padding-bottom: 8px;
+}
+
+.pad-for {
+    padding-right: 0px;
+    padding-left: 4px;
+}
+
+td  div  input {
+background:#FFFFFF;
+border:none;
+font-size:12px;
+}
+
+th {
+background:#FFFFFF;
+padding-top:15px;
+padding-bottom:10px;
+}
+
+
+/*TABLAS DINAMICAS CON JAVA*/
+.par {
+    background-color:#999999;
+}
+.impar {
+    background-color:#CCCCCC;
+}
+
+.contenedorRes{
+position:static;
+background:#99FF99;
+height:100px;
+}
+
+
+/*exportar*/
+
+.exportar{
+position: absolute;
+right:50px;
+bottom:0;
+margin: auto;
+height: 50px;
+width: 70px;
+border-top-right-radius:10px;
+border-top-left-radius:10px;
+background:#333333;
+z-index:10;
+opacity: 0.3;
+}
+
+.exportar:hover{
+opacity: 1;
+}
+
+.exportar > div{
+display:inline-block;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+.exe{
+background-image: url(../../img/exc.png);
+background-repeat:no-repeat;
+width:28px;
+height:32px;
+margin-left:5px;
+}
+
+.pdf{
+background-image:url(../../img/pdf.png);
+background-repeat:no-repeat;
+width:28px;
+height:32px;
+}
+
+.exe:hover{
+background-image:url(../../img/exch.png);
+background-repeat:no-repeat;
+}
+
+.pdf:hover{
+background-image:url(../../img/pdfh.png);
+background-repeat:no-repeat;
+}
+
+/*formulario*/
+
+.form-control{
+border:none;
+border-radius: 5px 5px 0px 5px;
+}
+
+.select{
+-webkit-appearance: none;
+-moz-appearance:none;
+appearance:none;
+border-radius: 5px 5px 0px 5px;
+background: #FFF url(../../img/select.png) no-repeat right;
+}
+
+select option  {
+padding:5px;
+}
+
+option:hover,
+option:focus,
+option:active,
+option:checked {
+background: linear-gradient(#EF9436, #CD6813);
+}
+
+

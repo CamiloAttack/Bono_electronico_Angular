@@ -1,0 +1,171 @@
+<header>
+  <div id="header" class="container-fluid">
+    <div class="main row">
+      <div class="col-xs-12 col-sm-3 col-me-3">
+        <div class="width">
+          <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-me-9 b">
+        <button id="btnStandby" class="ama-nar btn-sec ama-nar not-gri" onClick="" style="display: none">
+        <div>
+          <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+        &nbsp;ATENCION EN MODO STANDBY </div>
+        </button>
+        <button id="btnParticular" class="ama-nar btn-sec ver-ver not-gri" onClick="" style="display: none">
+        <div>
+          <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+        &nbsp;ATENCION PARTICULAR </div>
+        </button>
+        <button id="btnParticular2" class="ama-nar btn-sec eli" onClick="btnParticular()">
+        <div>
+          <span class="glyphicon glyphicon-random" aria-hidden="true"></span> Atención Particular</div>
+          </button>
+          <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" onClick="btnCancelarTransaccion()">
+          <div>
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancelar Registro de Atencion </div>
+            </button>
+            <div id="botonusuario" class="dis">
+              <button class="ama-nar btn-sec use">&nbsp;</button>
+              <div class="menu">
+                <div>
+                  <span id="usuarioRegistrado" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </div>
+                <div>
+                  <span id="prestadorRegistrado" class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </div>
+                <button onClick="cerraSecion()">
+                <span id="cerraSecion" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="formularioInicial" class="ubi container-fluid">
+        <form class="form-inline">
+          <div class="col-xs-12 col-sm-12 col-me12">
+            <div class="row pad-sup">
+              <div class="ico_tit"></div>
+              Titular:
+              <span id="titular"></span>
+            </div>
+            <div class="row pad-sup ico_ase ">
+              <div class="input-group pad-sup">
+                <span class="input-group-addon">
+                  <span id="icoOk" class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <span id="icoRe" class="glyphicon glyphicon-remove" aria-hidden="true" style="display: none"></span>
+                </span>
+                <input id="RutBeneficiario" class="form-control" ng-rut type="text" rut-format="blur" ng-model="model.rut" placeholder="1234567890-K">
+              </div>
+              <input id="ApellidoBeneficiario" class="form-control pad-sup" type="text" placeholder="">
+              <input id="NombreBeneficiario" class="form-control pad-sup" type="text" placeholder="">
+            </div>
+            <div class="row pad-sup disp">
+              <div class="ico_seg"></div>
+              <span id="financiador">
+              </span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-me-6"> </div>
+        </form>
+      </div>
+      <section id="Botones" class="" style="display: none">
+        <div id="BotonesA" class="" onClick="ingreso()">
+          <span class="col-xs-12 col-sm-12 col-me-12 pad-sup"> INGRESO DE PRESTACION</span>
+        </div>
+        <div id="BotonesB" class="" onClick="copago()">
+          <span class="col-xs-12 col-sm-12 col-me-12 pad-sup"> COPAGO</span>
+        </div>
+      </section>
+    </header>
+    <div id="formulario" class="container-fluid">
+      <form>
+        <div class="row">
+          <div id="prestacioness" class="col-xs-12 col-sm-6 co6-me-6 pad-sup">
+            <input id="prestacionValor" class="form-control typeahead" placeholder="CODIGO DE PRESTACION - PRESTACION" title="CODIGO DE PRESTACION - PRESTACION">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-me-4 pad-sup">
+            <input id="itemValor" class="form-control typeahead" type="text" placeholder="ITEM" title="ITEM">
+          </div>
+          <div class="col-xs-12 col-sm-2 col-me-2 pad-sup">
+            <input id="gesValor" class="form-control" type="text" placeholder="COGIDO GES" title="COGIDO GES">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-me-4 pad-sup">
+            <input id="derivadoValor" class="form-control" type="text" placeholder="DERIVADO POR" title="DERIVADO POR">
+          </div>
+          <div id="especialidadess" class="col-xs-12 col-sm-3 col-me-3 pad-sup pad-sup">
+            <input id="especialidadValor" class="form-control typeahead" type="text" placeholder="ESPECIALIDAD" title="ESPECIALIDAD">
+          </div>
+          <div id="medicoss" class="col-xs-12 col-sm-4 col-me-4 pad-sup">
+            <input id="medicoValor" class="form-control typeahead" type="text" placeholder="MEDICO TRATANTE">
+          </div>
+          <div class="col-xs-12 col-sm-1 col-me-1 pad-sup">
+            <input id="cantidadValor" class="form-control" type="number" value="1" min="1" max="7" placeholder="CANTIDAD">
+          </div>
+        </div>
+        <div class="row">
+          <div id="ingresaPrestacion" class="col-xs-12 col-sm-12 col-me-12 seudo" onClick="agregarFila()">
+            <span class="col-xs-12 col-sm-12 col-me-12 nar-narB btn-ins pad-sup text-center">AGREGAR PRESTACION</span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="containerTabla" class=" container-fluid table-responsive">
+      <table id="tablaPrestaciones" class="table">
+        <thead>
+          <tr>
+            <td>&nbsp;</td>
+            <td>PRESTACION</td>
+            <td>ITEM</td>
+            <td>MEDICO TRATANTE</td>
+            <td class="text-right">GES</td>
+            <td class="text-right">RH</td>
+            <td class="text-right">MONTO</td>
+            <td class="text-right">BONIFICACION</td>
+            <td class="text-right">COPAGO</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td colspan="6" class="nar-nar text-right">Total</td>
+          <td id="prestacionesTotalR" class="text-right">-</td>
+          <td class="text-right">
+            <div class="tool-tip">
+              <div class="toolb">
+                <div id="bonificacionTotalRR"> </div>
+                <div class="ver">
+                  <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="tool gri-gri">
+                <div>BONIFICACIONES POR ENTIDAD</div>
+                <div class="toolc text-left">
+                  <div id="bonificacionIsapreNombreR"></div>
+                  <div id="bonificacionSeguroNombreR"></div>
+                  <div id="bonificacionSeguro2NombreR"></div>
+                  <div id="bonificacionCajaNombreR"></div>
+                </div>
+                <div class="toolc text-right">
+                  <div id="bonificacionIsapreMontoTotalR"></div>
+                  <div id="bonificacionSeguroMontoTotalR"></div>
+                  <div id="bonificacionSeguro2MontoTotalR"></div>
+                  <div id="bonificacionCajaMontoTotalR"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td id="copagoMontoTotal" class="text-right">-</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div id="botonValorizar" class="panel-footer">
+    </div>

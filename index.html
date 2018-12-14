@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MEDIPASS - Bono Electrónico</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="bower_components/ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/v-accordion/dist/v-accordion.min.css" />
+
+    <!-- endbower -->
+
+
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+
+
+    <link rel="stylesheet" href="styles/main2.css">
+    <link rel="stylesheet" href="styles/main.css">
+ 
+    <link rel="stylesheet" href="scripts/toc_net/css/jquery.toast.css">
+ 
+
+    <style type="text/css">
+        .contenido_mensaje{
+            float: left;
+            text-align: center;
+        }
+
+        .notificaciondiv {
+      
+            padding: 10px;
+            font-size: 14px;
+            text-transform:uppercase;
+            text-align: center;
+            border-radius: 10px;
+            border-bottom-right-radius: 0px;
+            color:#FFFFFF;
+
+        }
+ 
+        .shadow_rojo{box-shadow:0 0 15px red}    
+
+        #notificaciondiv{
+
+            display: none;
+
+        }
+
+        .mensajeBloquearCaja{
+            animation: 1s ease 0s normal none 1 running alerta;
+            border-radius: 15px 15px 0 0;
+            bottom: 0;
+            box-shadow: 0 0 30px black;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            left: 0;
+            margin: auto;
+            max-width: 366px;
+            opacity: 1;
+            overflow: hidden;
+            padding: 10px;
+            position: inherit;
+            right: 0;
+            text-align: center;
+            top: 0;
+        }
+            
+    
+        .bonoAnulado_7{
+            
+            border:solid 1px black;
+        }
+        
+        table.dataTable thead th, table.dataTable thead td {
+            border-bottom: 1px solid #111;
+            padding: 9px 18px 20px;
+
+        }
+        table.dataTable tbody th, table.dataTable tbody td {
+         
+           /* line-height: 44px;
+            padding: 6px 13px 9px;*/
+        }
+ 
+      .tooltip_error {
+            color: red;
+            font-size: 13px;
+            height: 15px;
+            left: 0;
+            margin-left: 10px;
+            margin-top: 2px;
+            text-align: left;
+            width: 310px; 
+      }
+      #mensaje_exito{
+        text-transform: uppercase
+      }
+      #con_toc{
+        display: none;
+      }
+
+
+      .gif_loading{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-top:200px; 
+        width: 360px;
+      }
+        
+    </style>
+
+    <!-- endbuild -->
+</head>
+
+<body ng-app="medipassBE">
+
+    <!--
+      IE8 support, see AngularJS Internet Explorer Compatibility http://docs.angularjs.org/guide/ie
+      For Firefox 3.6, you will also need to include jQuery and ECMAScript 5 shim
+    -->
+    <!--[if lt IE 9]>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.2.0/es5-shim.js"></script>
+      <script>
+        document.createElement('ui-select');
+        document.createElement('ui-select-match');
+        document.createElement('ui-select-choices');
+      </script>
+    <![endif]-->
+
+    <div class="modal fade" id="modal_mensajes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="alerta ama-nar" id="alerta_mensajes">MENSAJE MEDIPASS
+    
+            <button type="button" class="close glyphicon glyphicon-remove form-control-feedback eliminar" data-dismiss="modal" id="close-modal" aria-label="Close"></button>
+            <div id="cantidad_lotes_modal">
+            
+                <div class="contenido_mensaje" id="contenido_mensaje">
+                </div>
+            </div>  
+
+                 
+        </div>
+
+    </div> 
+
+    <div class="modal fade" id="modal_loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">    
+        <div class="gif_loading">
+
+            <img src="images/gif_cargador/ajax-loader.gif" class="">
+
+        </div> 
+    </div> 
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <div ui-view></div>
+
+    </div>
+      
+    <button style="display:none;" id="re_connect" class="btn btn-default btn-sm pull-right" type="submit">Re-conectar Toc</button>
+
+    
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-soap/soapclient.js"></script>
+    <script src="bower_components/angular-soap/angular.soap.js"></script>
+    <script src="bower_components/angular-rut/dist/angular-rut.min.js"></script>
+    <script src="bower_components/lokijs/src/lokijs.js"></script>
+    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="bower_components/angular-datatables/dist/angular-datatables.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.js"></script>
+    <script src="bower_components/datatables-buttons/js/dataTables.buttons.js"></script>
+    <script src="bower_components/datatables-buttons/js/buttons.colVis.js"></script>
+    <script src="bower_components/datatables-buttons/js/buttons.flash.js"></script>
+    <script src="bower_components/datatables-buttons/js/buttons.html5.js"></script>
+    <!--script src="bower_components/datatables-buttons/js/buttons.print.js"></script-->
+    <script src="bower_components/angular-css/angular-css.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+    <script src="bower_components/FileSaver/FileSaver.js"></script>
+    <script src="bower_components/pdfmake/build/pdfmake.js"></script>
+    <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+    <script src="bower_components/jszip/dist/jszip.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/ng-currency/dist/ng-currency.min.js"></script>
+    <script src="bower_components/ui-select/dist/select.js"></script>
+    <script src="bower_components/angular-smart-table/dist/smart-table.min.js"></script>
+
+    <script src="bower_components/v-accordion/dist/v-accordion.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/angular-underscore-module/angular-underscore-module.js"></script>
+ 
+    <script  src="bower_components/validaciones/jquery.numeric.js"></script>
+
+
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <!-- endbower -->
+    <script src="bower_components/angular-i18n/angular-locale_es-cl.js"></script>
+    <script src="bower_components/moment/locale/es.js"></script>   
+    <script src="https://asafdav.github.io/ng-csv/build/ng-csv.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+
+
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+
+    <!-- Servicios -->
+    <script src="scripts/services/servicio-local.js"></script>
+    <script src="scripts/services/verificador-conexion.js"></script>
+    <script src="scripts/services/servicio-milliways.js"></script> 
+
+    <!-- Filtros -->
+
+    <script src="scripts/filters/unique.js"></script>
+    <script src="scripts/filters/limitLength.js"></script>    
+
+    <!-- Directivas -->
+    <script src="scripts/directives/boton-usuario.js"></script>
+    <script src="scripts/directives/boton-usuario-simulacion.js"></script>    
+    <script src="scripts/directives/bono.js"></script>
+    <script src="scripts/directives/valida-numeros.js"></script>
+    <script src="scripts/directives/bono-imprimir.js"></script> 
+    <script src="scripts/directives/valida-rut.js"></script> 
+    <script src="scripts/directives/modal_desbloqueo_caja.js"></script>     
+
+    <!-- Controladores -->
+    <script src="scripts/controllers/main.js"></script>
+
+    <script src="scripts/controllers/toc.js"></script>
+    <script src="scripts/controllers/toc-sin-toc.js"></script>    
+    <script src="scripts/controllers/caja.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/ram.js"></script>
+    <script src="scripts/controllers/copago.js"></script>
+    <script src="scripts/controllers/directorio-medico.js"></script>
+    <script src="scripts/controllers/consulta-venta.js"></script>
+    <script src="scripts/controllers/ramsimulacion.js"></script>
+    <script src="scripts/controllers/cierre-caja.js"></script>        
+    <script src="scripts/controllers/detalle-caja-medio-pago.js"></script>    
+    <script src="scripts/controllers/caja-cuadrada.js"></script>        
+          
+    <!-- endbuild -->
+
+    <!--script src="scripts/toc_net/js/bootstrap.min.js"></script>
+    <script src="scripts/toc_net/js/jquery.toast.js"></script>
+    <script src="scripts/toc_net/toc_jquery-1.6.4.min.js"></script>
+    <script> var jqTOC = jQuery.noConflict();</script>
+    <script src="scripts/toc_net/toc_jquery.signalr-2.1.0.min.js"></script>
+    <script src="https://localhost:12321/signalr/hubs"></script>
+    <script src="scripts/toc_net/toc.js"></script> 
+    <script src="scripts/toc_net/script.js"></script-->
+  
+</body>
+
+</html>

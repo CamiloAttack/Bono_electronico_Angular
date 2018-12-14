@@ -1,0 +1,45 @@
+      <!-- Modal content-->
+      <div class="modal-content">       
+        
+        <div class="modal-body">
+         
+          <div class="modal-titulo" >DESBLOQUEAR CAJA<span id="idAtencion"></span><span id="idFolio" style="display:none"></span></div>
+            <div class="modal_bono">
+              <div class="modal-body bono" style="height:400px;">
+                <div id="tocPaciente">
+                  <div class="huella"></div>
+                  <div class="container-fluid bg-greyb log-log altoA lin-bla">
+                    <div class="row center-blockb width">
+                      <div class="row">
+                          <div class="logo"></div>
+                          <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+                      </div>
+                    </div>
+
+                    <div id="mensaje_exitoDesbloquear" class="msn_exito_toc"></div>
+                    <div id="accionEnTocDesbloquear" class="text-center disab">COLOCA EL RUT DEL SUPERVISOR</div>  
+                       
+                          <img id="fingersToScanImage" src="images/fingerprint.png" class="img_dedo_toc">
+                       
+                  </div>
+                </div>
+                <div class="panel-footer abajo" id="id_botones_login">
+                  
+                  <input name="rut_desbloquear" id="campo_texto_rut_supervisor" placeholder="ej:10179892-5" value="13942219-8" type="text" style="margin-right:auto; margin-left:auto"><br><br>
+                  <button id="id_boton_login" type="button"   ng-click="desbloquearCaja()" class="btn btn-warning nar-narr" value="CONFIRMAR">IDENTIFICAR SUPERVISOR</button>
+                  <div style="display:none">
+
+                    <div id="nombre_login" style="display:none" ></div><div id="apellido_login" ></div>
+                    <div id="id_rut_apertura_caja"></div><div id="id_rut_nuevoOantiguo" style="display:none" ></div>
+
+                  </div>
+                </div>
+
+              </div>  
+            </div>
+          </div>
+
+       <button id="cerra_bloquear_caja"  type="button"   ng-click="cancel()"   style="display: none"></button>
+
+      <!--fin  Modal content-->
+ 

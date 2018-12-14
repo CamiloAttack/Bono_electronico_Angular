@@ -1,0 +1,23 @@
+<div id="tocPaciente">
+  <div class="huella"></div>
+  <div class="container-fluid bg-greyb log-log altoA lin-bla">
+    <div class="row center-blockb width">
+      <div class="row">
+        <div class="logo"></div>
+        <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+      </div>
+    </div>
+    <div id="accionEnToc" class="text-center disab">COLOQUE EL RUT DEL OPERADOR SOBRE EL TOC</div>
+    <div id="mensaje_exito" style="width: 482px; height: 20px; color: #999; margin-right: auto; margin-left: auto;text-align:center;"></div>
+  </div>
+</div>
+<div class="panel-footer abajo" id="id_botones_login">
+  <button id="id_boton_login" type="button" ng-click="vm.confirmarToc(vm.$state.current.name)" class="btn btn-warning nar-narr" value= "CONFIRMAR">IDENTIFICAR OPERADOR</button>
+  <button class="ama-nar btn dis_ram" value= "DISCAPACITADO" ng-click="vm.confirmarDiscapacitado()" ng-if="vm.$state.current.name === 'tocpaciente'" disabled="">&nbsp&nbsp</button><br><br>
+  <input name="campo_texto_rut-paciente" id="campo_texto_rut-paciente" placeholder="ej:10179892-5" value="18311976-1" type="text" style="margin-right:auto; margin-left:auto">
+  <div style="display:none">
+    <div id="nombre_login">Pepe Particular</div><div id="apellido_login" >ApellidoPaterParticular ApellidoMaterParticular</div>
+    <div id="id_rut_apertura_caja" ></div><div id="id_rut_nuevoOantiguo">nuevo</div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,91 @@
+    <div class="no col-xs-12 col-sm-9 co6-me-9">
+        <!--OBJETO EXEDENTES-->
+        <div class="lin-gri pad">
+            <div class=" col-xs-12 col-sm-12 col-me-12 gri-gri tit-tab">COMPROBANTE</div>
+            <!--BONO-->
+            <div id="bonopantalla" class="bono">
+                <bono></bono>
+            </div>
+            <!--FIN BONO-->
+        </div>
+    </div>
+
+    <form name="confirmar">
+        <div class="col-xs-12 col-sm-3 co6-me-3 no">
+            <div class="row  lin-ver pad">
+                <div class="col-xs-12 col-sm-12 col-me-12 ver-ver tit-tab">CONFIRMACION</div>
+                <div class="col-xs-12 col-sm-12 col-me-12 ">
+                    <div class="pad-sup">Confirme y luego seleccione algún método de entrega</div>
+
+ 
+
+                    <span ng-switch on="vm.atencion.datosAtencion.tipoAtencion">
+                        <span ng-switch-when="ONLINE">
+                            <div>
+                                <input name="opcion_confirma_bono" type="radio" id="id_imprimir_bono" value="Imprimir"  checked  ng-click="vm.opcionPostConfirmaBono('Imprimir');"  ng-model="vm.confirmar.imprimir" disabled="">¿Imprimir?
+                            </div>
+                            <div>
+                                <input  name="opcion_confirma_bono"  ng-click="vm.opcionPostConfirmaBono('Enviar');" type="radio" id="id_enviar_mail_bono" value="Enviar" disabled="">¿Desea enviar por correo?
+                            </div>
+                            <div class="pad-sup">
+                                <input disabled="" id="correo_bono" class="form-control" type="email" placeholder="usuario@dominio.cl" name="text" title="Debe ingrear un correo electrónico del contacto " value=""/>
+                            </div>
+                          
+                            <div class="tooltip_error" id="id_correo_envio_error"></div>
+
+                            <div class="text-center pad-sim">
+
+
+                                <button class="btn btn-warning" value="Imprimir" id="imprimeOEnviaBono"  ng-click="vm.imprimeOEnviaBono()" style="display:none">Imprimir
+
+
+                                <button class="btn btn-warning" value="Confirmar" id="confirmar_envio_bono"  ng-click="vm.servicioMilliways.enviarBono()"> Confirmar
+                                </button> 
+
+                            </div>
+                        </span>
+                        <span ng-switch-default>
+                            <div>
+                                <input name="opcion_confirma_bono" type="radio" id="id_imprimir_bono" value="Imprimir"  checked="checked" ng-click="vm.opcionPostConfirmaBono('Imprimir');"  ng-model="vm.confirmar.imprimir" >¿Imprimir?
+                            </div>
+                            <div>
+                                <input  name="opcion_confirma_bono"  ng-click="vm.opcionPostConfirmaBono('Enviar');" type="radio" id="id_enviar_mail_bono" value="Enviar">¿Desea enviar por correo?
+                            </div>
+                            <div class="pad-sup">
+                                <input disabled="" id="correo_bono" class="form-control" type="text" placeholder="usuario@dominio.cl" name="text" title="Debe ingrear un correo electrónico del contacto " value=""/>
+                            </div>
+
+      
+                            <div class="tooltip_error" id="id_correo_envio_error"></div>
+
+                      
+
+                            <div class="text-center pad-sim">
+
+
+                                <button class="btn btn-warning" value="Imprimir" id="imprimeOEnviaBono"  ng-click="vm.imprimeOEnviaBono()">Imprimir
+
+ 
+
+                            </div>
+                        </span>
+                    </span>    
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!--FIN BONO--> 
+</div>
+<!--BONOS IMPRESOS-->
+<div>
+    <div class="bono-null">
+        <bonoimprimir></bonoimprimir> 
+    </div>
+
+</div>
+

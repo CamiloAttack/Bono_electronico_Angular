@@ -1,0 +1,100 @@
+<div style="display: none">
+  <span id="idAtencion"></span><span id="idFolio" ></span>
+</div>
+<header>
+  <div class="container-fluid" id="header">
+    <div class="main row">
+      <div class="col-xs-3 col-sm-3 col-me-3">
+        <div class="width">
+          <div class="row">
+            <div class="logo"></div>
+            <div class="titulo cero">SISTEMA DE BONO ELECTRONICO</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-me-9 b">
+        <button id="btnCancelarTransaccion" class="ama-nar btn-sec eli" ng-click="vm.btnCancelarTransaccion()">
+        <div>
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          Cancelar Consulta de Ventas
+        </div>
+        </button>
+        <boton-usuario></boton-usuario>
+      </div>
+    </div>
+  </div>
+  <div  class="container-columna-header-grilla" >
+    <div class="columna-header-grilla col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-me-12 ico_nom_financiador">
+        <div class="ico_seg"></div>
+        <span id="financiador">{{ vm.servicioLocal.datosSesion.lugarAtencionNombre }} / {{ vm.servicioLocal.datosSesion.nombreSucursal }}</span>
+      </div>
+      <div>&nbsp;</div>
+      <div class="detalle">FECHA</div>
+        <div class="numeros"> {{ vm.fecha_actual }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">ATENCIONES</div>
+      <div class="numeros"> {{ vm.servicioLocal.cantidadAtenciones }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">FONDO INICIAL</div>
+      <div id="inicial" class="numeros">{{ vm.servicioLocal.montoAperturaCaja }}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-2">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">MONTO REGISTRADO</div>
+      <div id="recaudado" class="numeros">{{vm.servicioLocal.montoRecaudado}}</div>
+    </div>
+    <div class="columna-header-grilla col-xs-12 col-sm-6 col-md-3">
+      <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="detalle">DIFERENCIA</div>
+      <div id="diferencia" class="numeros">{{vm.servicioLocal.totalMontoDiferencia}}</div>
+    </div>
+  </div>
+</header>
+</div>
+<div class="container-fluid table-responsive pad-bus altocontenedor ng-scope">
+<table class="col-xs-12 col-sm-12 col-me-12 table table-striped table-bordered hover CDV-T " datatable="ng" dt-columns="vm.dtColumnDefs" dt-options="vm.dtOptions" dt-instance="vm.dtInstance" id="data-table-detalle-caja-medio-pago" width="100%">
+  <thead>
+    <tr class="theadTrTablaGrillas">
+      <th class=""> </th>
+      <th class=""> </th>
+      <th class="">N° BONO</th>
+      <th id="" class="text-rcenter">FECHA</th>
+      <th class="text-center">RUT PACIENTE</th>
+      <th class="text-center">PACIENTE</th>
+      <th class="text-center">VALOR</th>
+      <th class="text-center">BONIFICACIÓN</th>
+      <th class="text-center">{{vm.servicioLocal.datosDetalleCajaMedioPago[0].nomTipoPago}}</th>
+      <th class="text-center">COPAGO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="record in vm.servicioLocal.datosDetalleCajaMedioPago track by $index" role="row" class="clickRowModalDetalle" id="tr-data-table-detalle-caja-medio-pago">
+      <td class="sorting_desc"  >{{ record.idAtencion}}</td>
+      <td >
+        <button type="button" id="id_anular_{{ record.idAtencion}}" ng-disabled="{{record.disabled}}" data="{{ record.idAtencion }},{{ record.numeroBono }}" ng-click="vm.openModalAnular(record.idAtencion,record.numeroBono);" class="{{ record.valor_clase}} btn ">{{ record.disabled ? 'Anulada' : 'Anular&nbsp;' }}</button>
+      </td>
+      <td class="sorting_desc"  >{{ record.numeroBono}}</td>
+      <td class="sorting_desc"  >{{ record.fechaBono}}</td>
+      <td class="sorting_desc" >{{ record.rutBenef}}</td>
+      <td class="sorting_desc" >{{ record.nombrePaciente}}</td>
+      <td class="sorting_desc"  >{{ record.valor}}</td>
+      <td class="sorting_desc">{{ record.totalBonif}}</td>
+      <td class="sorting_desc">{{ record.bonifSeleccionada}}</td>
+      <td class="sorting_desc" >{{ record.copago}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="panel-footer" id="footer-detalle-caja-medio-pago">
+<a class="btn ver-ver"  ui-sref="cerrarCaja" href="#/cierre-caja">VOLVER</a>
+</div>
+<style type="text/css">
+.exportar{
+display: none;
+}
+</style>
